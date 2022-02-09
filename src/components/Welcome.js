@@ -15,7 +15,7 @@ export default function Welcome(props) {
   return (
     <div className="main-container">
       <span className="title">Welcome to MLTD Calculator</span>
-      <img src={imgs[getRandom(3)]} />
+      <img alt="random minis" src={imgs[getRandom(3)]} />
     </div>
   )
 }
