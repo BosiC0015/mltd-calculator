@@ -1,4 +1,15 @@
+.main-container {
+  padding: 5%;
+}
+
+.title {
+  font-size: large;
+  font-weight: 500;
+  text-align: center;
+}
+
 form {
+  margin: 5% 0;
   display: flex;
   flex-direction: column;
 }
@@ -6,4 +17,61 @@ form {
 .form-input {
   display: flex;
   flex-direction: column;
+  padding: 2% 0;
+
+  &__input{
+    height: 2rem;
+  }
+}
+
+label {
+  padding: 2%;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.event-item-qty {
+  padding: 3%;
+  
+  &-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5%;
+  }
+}
+
+.choose-item-qty {
+  font-size: 1.25rem;
+  background-color: #fffcee;
+  border: 1px solid #818159;
+  border-radius: .3rem;
+  padding: .4rem .825rem;
+}
+.choose-item-qty:focus {
+  background-color: #f3dea4;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  &-clear {
+    width: 30%;
+    font-size: 1.5rem;
+    background-color: #ffe186;
+    border: 1px solid #9b7506;
+    border-radius: .3rem;
+    padding: .4rem .825rem;
+  }
+
+  &-calc {
+    width: 50%;
+    font-size: 1.5rem;
+    background-color: #ffe186;
+    border: 1px solid #9b7506;
+    border-radius: .3rem;
+    padding: .4rem .825rem;
+  }
 }

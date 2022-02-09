@@ -42,8 +42,8 @@ export default function Trust(props) {
 
 
   return (
-    <div>
-      <span>Platinum Star Trust Event Calculator</span>
+    <div className="main-container">
+      <span className="title">Platinum Star Trust Event Calculator</span>
       <form
         id="pstrust-calc"
         autoComplete="off"
@@ -51,36 +51,44 @@ export default function Trust(props) {
         onSubmit={e => e.preventDefault()}
       >
         <div className="form-input">
-          <label>Current Point</label>
-          <input
-            className="current-point__input"
-            placeholder="0"
-            value={currentPoint}
-            onChange={(event) => setCurrentPoint(event.target.value)}
-          />
+            <label>Current Point</label>
+            <input
+              className="form-input__input"
+              placeholder="0"
+              value={currentPoint}
+              onChange={(event) => setCurrentPoint(event.target.value)}
+            />
+        </div>
+        <div className="form-input">
           <label>Target Point</label>
           <input
-            className="target-point__input"
+            className="form-input__input"
             placeholder="0"
             value={targetPoint}
             onChange={(event) => setTargetPoint(event.target.value)}
           />
-          <label>Event props</label>
+        </div>
+        <div className="form-input">
+          <label>Event Items</label>
           <input
-            className="event-props__input"
+            className="form-input__input"
             placeholder="0"
             value={eventItems}
             onChange={(event) => setEventItems(event.target.value)}
           />
         </div>
-        <div>
-          <span>How many event props you use:</span>
-          <ItemsQty item={180} setItem={() => setItemConsume(180)} />
-          <ItemsQty item={360} setItem={() => setItemConsume(360)} />
-          <ItemsQty item={720} setItem={() => setItemConsume(720)} />
+        <div className="event-item-qty">
+          <label>How many event items do you use:</label>
+          <div className="event-item-qty-buttons">
+            <ItemsQty item={180} setItem={() => setItemConsume(180)} />
+            <ItemsQty item={360} setItem={() => setItemConsume(360)} />
+            <ItemsQty item={720} setItem={() => setItemConsume(720)} />
+          </div>
         </div>
-        <button className="clear" onClick={clear}>Clear</button>
-        <button onClick={() => setLoadREsults(true)}>Calculate</button>
+        <div className="buttons">
+          <button className="buttons-clear" onClick={clear}>Clear</button>
+          <button className="buttons-calc" onClick={() => setLoadREsults(true)}>Calculate</button>
+        </div>
       </form>
       <TrustResult
         load={loadResults}
