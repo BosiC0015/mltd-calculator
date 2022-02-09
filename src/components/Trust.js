@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Result from "./Result";
+import TrustResult from "./TrustResult";
 import ItemsQty from "./ItemsQty";
 import "./styles.scss";
 
@@ -82,7 +82,7 @@ export default function Trust(props) {
         <button className="clear" onClick={clear}>Clear</button>
         <button onClick={() => setLoadREsults(true)}>Calculate</button>
       </form>
-      <Result
+      <TrustResult
         load={loadResults}
         difference={difference}
         eventSongPlays={eventSongPlays(itemConsume)}
