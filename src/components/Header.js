@@ -7,13 +7,13 @@ export default function Header(props) {
     <a href='#click' className='menu'>  
       <span className='menu-title'>Choose Event Type</span>
       <ul className='menu-dropdown'>
-        <li onClick={() => console.log('theater')}>PSTheater</li>
-        <li onClick={() => console.log('tour')}>PSTour</li>
-        <li onClick={() => console.log('twin stage')}>PSTwinStage</li>
-        <li onClick={() => console.log('tune')}>PSTune</li>
-        <li onClick={() => console.log('tale')}>PSTale</li>
-        <li onClick={() => console.log('treasure')}>PSTreaure</li>
-        <li onClick={() => console.log('trust')}>PSTrust</li>
+        <li onClick={() => props.select('THEATER')}>PSTheater</li>
+        <li onClick={() => props.select('TOUR')}>PSTour</li>
+        <li onClick={() => props.select('TWINSTAGE')}>PSTwinStage</li>
+        <li onClick={() => props.select('TUNE')}>PSTune</li>
+        <li onClick={() => props.select('TALE')}>PSTale</li>
+        <li onClick={() => props.select('TREASURE')}>PSTreaure</li>
+        <li onClick={() => props.select('TRUST')}>PSTrust</li>
       </ul>
     </a>
   )
