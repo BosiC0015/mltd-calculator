@@ -9,13 +9,13 @@ const imgs = [
 
 const getRandom = (num) => {
   return Math.floor(Math.random() * num);
-}
+};
 
 export default function Welcome(props) {
   return (
     <div className="main-container">
-      <span className="title">Welcome to MLTD Calculator</span>
+      <p className="title">Welcome to MLTD Calculator</p>
       <img alt="random minis" src={imgs[getRandom(3)]} />
     </div>
-  )
-}
+  );
+};

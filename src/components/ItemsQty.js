@@ -7,5 +7,5 @@ export default function ItemsQty(props) {
     <div>
       <button className="choose-item-qty" onClick={props.setItem}>{props.item}</button>
     </div>
-  )
-}
+  );
+};

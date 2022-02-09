@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import ItemsQty from "./ItemsQty";
-import "./styles.scss";
 import TheaterResult from "./TheaterResult";
+import "./styles.scss";
 
 
 export default function Theater(props) {
   const [currentPoint, setCurrentPoint] = useState('');
   const [targetPoint, setTargetPoint] = useState('');
   const [eventItems, setEventItems] = useState('');
-  const [itemConsume, setItemConsume] = useState(180)
+  const [itemConsume, setItemConsume] = useState(180);
   const [loadResults, setLoadResults] = useState(false);
 
   const difference = targetPoint - currentPoint;
@@ -20,8 +20,8 @@ export default function Theater(props) {
       return (difference / 1074);
     } else if (items === 180) {
       return (difference / 537);
-    }
-  }
+    };
+  };
 
   const regularSongPlays = (items) => {
     if (items === 720) {
@@ -30,20 +30,21 @@ export default function Theater(props) {
       return ((eventSongPlays(360) * 360) - eventItems) / 595;
     } else if (items === 180) {
       return ((eventSongPlays(180) * 180) - eventItems) / 595;
-    }
-  }
+    };
+  };
 
   const clear = () => {
     setCurrentPoint('');
     setTargetPoint('');
     setEventItems('');
+    setItemConsume(180);
     setLoadResults(false);
-  }
+  };
 
 
   return (
     <div className="main-container">
-      <span className="title">Platinum Star Theater Event Calculator</span>
+      <p className="title">Platinum Star Theater Event Calculator</p>
       <form
         id="pstheater-calc"
         autoComplete="off"
@@ -97,5 +98,5 @@ export default function Theater(props) {
         regularSongPlays={regularSongPlays(itemConsume)}
       />
     </div>
-  )
-}
+  );
+};

@@ -8,7 +8,7 @@ export default function Trust(props) {
   const [currentPoint, setCurrentPoint] = useState('');
   const [targetPoint, setTargetPoint] = useState('');
   const [eventItems, setEventItems] = useState('');
-  const [itemConsume, setItemConsume] = useState(180)
+  const [itemConsume, setItemConsume] = useState(180);
   const [loadResults, setLoadResults] = useState(false);
 
   const difference = targetPoint - currentPoint;
@@ -20,8 +20,8 @@ export default function Trust(props) {
       return (difference / 1611);
     } else if (items === 180) {
       return (difference / 806);
-    }
-  }
+    };
+  };
 
   const regularSongPlays = (items) => {
     if (items === 720) {
@@ -30,20 +30,21 @@ export default function Trust(props) {
       return ((eventSongPlays(360) * 360) - eventItems) / 595;
     } else if (items === 180) {
       return ((eventSongPlays(180) * 180) - eventItems) / 595;
-    }
-  }
+    };
+  };
 
   const clear = () => {
     setCurrentPoint('');
     setTargetPoint('');
     setEventItems('');
+    setItemConsume(180);
     setLoadResults(false);
-  }
+  };
 
 
   return (
     <div className="main-container">
-      <span className="title">Platinum Star Trust Event Calculator</span>
+      <p className="title">Platinum Star Trust Event Calculator</p>
       <form
         id="pstrust-calc"
         autoComplete="off"
@@ -97,5 +98,5 @@ export default function Trust(props) {
         regularSongPlays={regularSongPlays(itemConsume)}
       />
     </div>
-  )
-}
+  );
+};

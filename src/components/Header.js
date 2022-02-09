@@ -16,5 +16,5 @@ export default function Header(props) {
         <li onClick={() => props.select('TRUST')}>PSTrust</li>
       </ul>
     </a>
-  )
-}
+  );
+};

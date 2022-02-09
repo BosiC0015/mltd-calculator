@@ -28,7 +28,7 @@ export default function Tune(props) {
       return difference / (980 * (1 + desk * 0.01))
     } else if (items === 140) {
       return difference / (490 * (1 + desk * 0.01))
-    }
+    };
   };
 
   const regularSongPlays = (items, desk) => {
@@ -38,7 +38,7 @@ export default function Tune(props) {
       return ((eventSongPlays(280, desk) * 280) - eventItems) / 525;
     } else if (items === 140) {
       return ((eventSongPlays(140, desk) * 140) - eventItems) / 525;
-    }
+    };
   };
 
   const clear = () => {
@@ -53,8 +53,7 @@ export default function Tune(props) {
 
   return (
     <div className="main-container">
-      <span className="title">Platinum Star Tune Event Calculator</span>
-
+      <p className="title">Platinum Star Tune Event Calculator</p>
       <form
         id="pstrust-calc"
         autoComplete="off"

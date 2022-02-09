@@ -8,32 +8,33 @@ export default function Tour(props) {
   const [currentPoint, setCurrentPoint] = useState('');
   const [targetPoint, setTargetPoint] = useState('');
   const [eventItems, setEventItems] = useState('');
-  const [itemConsume, setItemConsume] = useState(1)
+  const [itemConsume, setItemConsume] = useState(1);
   const [loadResults, setLoadResults] = useState(false);
 
   const difference = targetPoint - currentPoint;
 
   const eventSongPlays = (items) => {
     if (items === 3) {
-      return difference / 2160; // use Math.ceil() for round
+      return difference / 2160;
     } else if (items === 2) {
       return difference / 1440;
     } else if (items === 1) {
       return difference / 720;
-    }
-  }
+    };
+  };
   
   const clear = () => {
     setCurrentPoint('');
     setTargetPoint('');
     setEventItems('');
+    setItemConsume(1);
     setLoadResults(false);
-  }
+  };
 
 
   return (
     <div className="main-container">
-      <span className="title">Platinum Star Tour Event Calculator</span>
+      <p className="title">Platinum Star Tour Event Calculator</p>
       <form
         id="pstour-calc"
         autoComplete="off"
@@ -79,12 +80,12 @@ export default function Tour(props) {
           <button className="buttons-clear" onClick={clear}>Clear</button>
           <button className="buttons-calc" onClick={() => setLoadResults(true)}>Calculate</button>
         </div>
-        <TourResult
-          load={loadResults}
-          difference={difference}
-          eventSongPlays={eventSongPlays(itemConsume)}
-        />
       </form>
+      <TourResult
+        load={loadResults}
+        difference={difference}
+        eventSongPlays={eventSongPlays(itemConsume)}
+      />
     </div>
   );
 };
