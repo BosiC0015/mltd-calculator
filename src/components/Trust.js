@@ -87,7 +87,7 @@ export default function Trust(props) {
         </div>
         <div className="buttons">
           <button className="buttons-clear" onClick={clear}>Clear</button>
-          <button className="buttons-calc" onClick={() => setLoadREsults(true)}>Calculate</button>
+          <button className="buttons-calc" onClick={() => setLoadResults(true)}>Calculate</button>
         </div>
       </form>
       <TrustResult
