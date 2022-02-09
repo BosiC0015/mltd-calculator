@@ -9,7 +9,7 @@ export default function Trust(props) {
   const [targetPoint, setTargetPoint] = useState('');
   const [eventItems, setEventItems] = useState('');
   const [itemConsume, setItemConsume] = useState(180)
-  const [loadResults, setLoadREsults] = useState(false);
+  const [loadResults, setLoadResults] = useState(false);
 
   const difference = targetPoint - currentPoint;
 
@@ -37,7 +37,7 @@ export default function Trust(props) {
     setCurrentPoint('');
     setTargetPoint('');
     setEventItems('');
-    setLoadREsults(false);
+    setLoadResults(false);
   }
 
 
