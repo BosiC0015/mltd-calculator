@@ -8,7 +8,7 @@ export default function Theater(props) {
   const [currentPoint, setCurrentPoint] = useState('');
   const [targetPoint, setTargetPoint] = useState('');
   const [eventItems, setEventItems] = useState('');
-  const [itemConsume, setItemConsume] = useState(1)
+  const [itemConsume, setItemConsume] = useState(180)
   const [loadResults, setLoadResults] = useState(false);
 
   const difference = targetPoint - currentPoint;
@@ -45,7 +45,7 @@ export default function Theater(props) {
     <div className="main-container">
       <span className="title">Platinum Star Theater Event Calculator</span>
       <form
-        id="pstrust-calc"
+        id="pstheater-calc"
         autoComplete="off"
         onKeyDown={e => e.key === 'Enter' && e.preventDefault()}
         onSubmit={e => e.preventDefault()}
