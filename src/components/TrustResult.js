@@ -10,10 +10,8 @@ export default function TrustResult(props) {
     <div className="result">
       <p>(1.5 * points)</p>
       <p>You still have {props.difference} points to go.</p>
-      <p>(use 4 * items)</p>
       <p>You still need to play {props.eventSongPlays} times event song.</p>
-      <p>(use 300 tickets)</p>
-      <p>You still need to play {props.regularSongPlays} times regular songs.</p>
+      <p>You still need to play {props.regularSongPlays} times regular songs (using 300 tickets).</p>
     </div>
   )
 }
