@@ -1,21 +1,15 @@
 import React from "react";
+import getRandom from "../helpers/getRandom";
+import { miniCharas } from "../helpers/miniCharas";
 
-
-const imgs = [
-  'https://imas.gamedbs.jp/mlth/image/chara/loading/1626621122045_5stwjvyf.png',
-  'https://imas.gamedbs.jp/mlth/image/chara/loading/1626621120029_s0peziy7.png',
-  'https://imas.gamedbs.jp/mlth/image/chara/loading/1626621122044_9lbu2dca.png'
-];
-
-const getRandom = (num) => {
-  return Math.floor(Math.random() * num);
-};
 
 export default function Welcome(props) {
+  const miniCharaImgs = Object.values(miniCharas)
   return (
     <div className="main-container">
+      {/* Holiday Banners */}
       <p className="title">Welcome to MLTD Calculator</p>
-      <img alt="random minis" src={imgs[getRandom(3)]} />
+      <img alt="random mini chara" src={miniCharaImgs[getRandom(39)]} />
     </div>
   );
 };
