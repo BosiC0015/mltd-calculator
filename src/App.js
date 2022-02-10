@@ -12,7 +12,7 @@ import useVisualMode from './hooks/useVisualHook';
 import './App.scss';
 
 export default function App() {
-  // need to add modes
+  // add modes for rendering event page components
   const WELCOME = 'WELCOME';
   const THEATER = 'THEATER';
   const TOUR = 'TOUR';

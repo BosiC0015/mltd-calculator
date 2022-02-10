@@ -3,7 +3,7 @@ import getRandom from "../../helpers/getRandom";
 import { chiristmas } from "../../helpers/holidayBanners";
 
 
-export default function Anniversaries(props) {
+export default function Christmas(props) {
   const chiristmasImgs = Object.values(chiristmas);
 
 
