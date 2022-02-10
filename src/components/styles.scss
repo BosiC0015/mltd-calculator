@@ -37,7 +37,7 @@ label {
   &-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     padding: 5%;
   }
 }
@@ -47,7 +47,7 @@ label {
   background-color: #fffcee;
   border: 1px solid #818159;
   border-radius: .3rem;
-  padding: .4rem .825rem;
+  padding: .5rem 1rem;
 }
 .choose-item-qty:focus {
   background-color: #f3dea4;
