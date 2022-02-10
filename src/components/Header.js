@@ -4,7 +4,7 @@ import "./Header.scss";
 
 export default function Header(props) {
   return (
-    <a href='#click' className='menu'>  
+    <a className="menu">
       <span className='menu-title'>Choose Event Type</span>
       <ul className='menu-dropdown'>
         <li onClick={() => props.select('THEATER')}>PSTheater</li>

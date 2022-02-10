@@ -32,55 +32,9 @@ $menu_WIDTH: 100%;
   transition: 0.3s background-color;
 }
 
-.menu-title:before {
-  content: "";
-  display: block;
-  height: 0;
-  border-top: 5px solid #9dc852;
-  border-left: ($menu_WIDTH / 2) solid transparent;
-  border-right: ($menu_WIDTH / 2) solid transparent;
-  border-bottom: 0 solid #dddddd;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 101;
-  transition:
-    0.2s 0.2s border-top ease-out,
-    0.3s border-top-color;
-}
-
 .menu-title:hover { 
   background: #FFC20A; 
   color: #FFFFFF;
-}
-.menu-title:hover:before { 
-  border-top-color: #8db842; 
-}
-
-.menu:hover > .menu-title:before {
-  border-top-width: 0;
-  transition:
-    0.2s border-top-width ease-in,
-    0.3s border-top-color;
-}
-
-.menu-title:after {
-  content: "";
-  display: block;
-  height: 0;
-  border-left: ($menu_WIDTH / 2) solid transparent;
-  border-right: ($menu_WIDTH / 2) solid transparent;
-  border-bottom: 0 solid #ebebeb;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 101;
-  transition: 0.2s border-bottom ease-in;
-}
-
-.menu:hover > .menu-title:after {
-  border-bottom-width: 5px;
-  transition: 0.2s 0.2s border-bottom-width ease-out;
 }
 
 .menu-dropdown {
@@ -88,39 +42,17 @@ $menu_WIDTH: 100%;
   margin:0;
   padding: 15px 0;
   position: absolute;
-  background: #ebebeb;
+  background: #ececec;
   z-index: 100;
   transition:
     0.5s padding,
     0.5s background;
 }
 
-.menu-dropdown:after {
-  content: "";
-  display: block;
-  height: 0;
-  border-top: 5px solid #ebebeb;
-  border-left: ($menu_WIDTH / 2) solid transparent;
-  border-right: ($menu_WIDTH / 2) solid transparent;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 101;
-  transition: 0.5s border-top;
-}
-
 .menu:not(:hover) > .menu-dropdown {
   padding: 4px 0;
   background: #dddddd;
   z-index: 99;
-}
-
-.menu:not(:hover) > .menu-dropdown:after {
-  border-top-color: #dddddd;
-}
-
-.menu:not(:hover) > .menu-title:after {
-  border-bottom-color: #dddddd;
 }
 
 .menu-dropdown > * {
