@@ -19,6 +19,10 @@ The event item quantity you use are set to the minimum as defalt.
 
 3. When click on 'Clear' button, the form will be reset.
 
+## Users' Guide
+
+!["usersguide]{https://github.com/BosiC0015/mltd-calculator/blob/master/public/20220212_190615.gif}
+
 ## Setup and Run
 
 1. ```cd``` to the directory
