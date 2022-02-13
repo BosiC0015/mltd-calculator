@@ -12,7 +12,7 @@ export default function Valentine(props) {
       <p className="title">🍫Happy Valentine!🍫</p>
       <img
         alt="mltd anniversary banner"
-        src={valentineImgs[getRandom(3)]}
+        src={valentineImgs[getRandom(4)]}
         width='100%'
       />
     </div>
