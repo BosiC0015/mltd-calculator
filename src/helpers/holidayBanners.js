@@ -2,6 +2,7 @@ const valentine = {
   2019: 'https://imas.gamedbs.jp/mlth/image/chara/other/1550122672001_9yrgeiuw.jpg',
   2020: 'https://imas.gamedbs.jp/mlth/image/chara/other/1592368427001_w5hd6n9b.png',
   2021: 'https://imas.gamedbs.jp/mlth/image/chara/other/1613229890001_zf8vb06t.png',
+  2022: 'https://pbs.twimg.com/media/FLfI59CaIAA-Ig6?format=png&name=large'
 };
 
 const mlAnniversaries = {
