@@ -10,7 +10,7 @@ The application is mainly built with React JS and SCSS.
 
 ## Features
 
-0. There are random mini characters generatad on welcome page. On special days, there are also special banners genereated randomly.
+0. There are random mini characters generated on the welcome page. On special days, there are also special banners generated randomly.
 
 1. Users can select type of the events. (There are still event types which I don't have data about, their pages will be developed soon after the coming one is hold.)
 
