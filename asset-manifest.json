@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mltd-calculator/static/css/main.7cfa79a3.css",
+    "main.js": "/mltd-calculator/static/js/main.1f9118fc.js",
+    "static/js/787.908646f8.chunk.js": "/mltd-calculator/static/js/787.908646f8.chunk.js",
+    "index.html": "/mltd-calculator/index.html",
+    "main.7cfa79a3.css.map": "/mltd-calculator/static/css/main.7cfa79a3.css.map",
+    "main.1f9118fc.js.map": "/mltd-calculator/static/js/main.1f9118fc.js.map",
+    "787.908646f8.chunk.js.map": "/mltd-calculator/static/js/787.908646f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cfa79a3.css",
+    "static/js/main.1f9118fc.js"
+  ]
+}
