@@ -8,6 +8,10 @@ The application is mainly built with React JS and SCSS.
 >- This application is doing only rough calculation.
 >- The results are not rounded to integers, which can help users to adjust their plays.
 
+## URL
+
+https://BosiC0015.github.io/mltd-calculator
+
 ## Features
 
 0. There are random mini characters generated on the welcome page. On special days, there are also special banners generated randomly.
@@ -23,9 +27,9 @@ The event item quantity you use are set to the minimum as defalt.
 
 !["usersguide](https://github.com/BosiC0015/mltd-calculator/blob/master/public/20220212_190615.gif)
 
-## Setup and Run
+<!-- ## Setup and Run -->
 
-1. ```cd``` to the directory
-2. install the depensencies in terminal with ```git install``` command
-3. run ```npm start```
-4. open http://localhost:3000/ in the browser.
+<!-- 1. ```cd``` to the directory -->
+<!-- 2. install the depensencies in terminal with ```git install``` command -->
+<!-- 3. run ```npm start``` -->
+<!-- 4. open http://localhost:3000/ in the browser. -->
