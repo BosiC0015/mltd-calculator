@@ -27,6 +27,12 @@ The event item quantity you use are set to the minimum as defalt.
 
 !["usersguide](https://github.com/BosiC0015/mltd-calculator/blob/master/public/20220212_190615.gif)
 
+## Credits
+
+Image sources from:
+https://twitter.com/imasml_theater
+https://imas.gamedbs.jp/mlth/
+
 <!-- ## Setup and Run -->
 
 <!-- 1. ```cd``` to the directory -->
