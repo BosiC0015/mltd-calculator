@@ -30,8 +30,8 @@ The event item quantity you use are set to the minimum as defalt.
 ## Credits
 
 Image sources from:
-https://twitter.com/imasml_theater
-https://imas.gamedbs.jp/mlth/
+- https://twitter.com/imasml_theater
+- https://imas.gamedbs.jp/mlth/
 
 <!-- ## Setup and Run -->
 
