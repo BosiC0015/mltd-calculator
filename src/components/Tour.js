@@ -76,16 +76,17 @@ export default function Tour(props) {
             <ItemsQty item={3} setItem={() => setItemConsume(3)} />
           </div>
         </div>
+        <TourResult
+          load={loadResults}
+          difference={difference}
+          eventSongPlays={eventSongPlays(itemConsume)}
+        />
         <div className="buttons">
           <button className="buttons-clear" onClick={clear}>Clear</button>
           <button className="buttons-calc" onClick={() => setLoadResults(true)}>Calculate</button>
         </div>
       </form>
-      <TourResult
-        load={loadResults}
-        difference={difference}
-        eventSongPlays={eventSongPlays(itemConsume)}
-      />
+
     </div>
   );
 };
