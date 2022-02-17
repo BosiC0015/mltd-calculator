@@ -1,24 +1,17 @@
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 * {
   box-sizing: border-box;
 }
 
-$menu_WIDTH: 100%;
-
 .menu {
   display: block;
-  position: relative;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu-title {
   display: block;
-  width: $menu_WIDTH;
+  width: 100%;
   height: 60px;
   margin: 0;
   padding: 12px 0;
@@ -58,7 +51,7 @@ $menu_WIDTH: 100%;
 .menu-dropdown > * {
   overflow: hidden;
   height: 30px;
-  padding: 5px 10px;
+  padding: 7% 10%;
   background: rgba(0,0,0,0);
   white-space: nowrap;
   transition: 
@@ -70,7 +63,7 @@ $menu_WIDTH: 100%;
 }
 
 .menu-dropdown > *:hover {
-  background: rgba(0,0,0,0.1);
+  background: #0000001a;
 }
 
 .menu:not(:hover) > .menu-dropdown > * {
@@ -79,7 +72,7 @@ $menu_WIDTH: 100%;
   padding-top: 0;
   padding-bottom: 0;
   margin: 0;
-  color: rgba(25,25,25,0);
+  color: #19191900;
   transition: 
     0.5s 0.1s height,
     0.5s 0.1s padding,
@@ -87,4 +80,56 @@ $menu_WIDTH: 100%;
     0.3s color,
     0.6s visibility;
   z-index: 99;
+}
+
+
+@media only screen and (min-width: 900px) {
+  .App {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .menu {
+    width: 30vw;
+  }
+
+  li {
+    font-size: large;
+  }  
+
+  .menu-title {
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 12px 0;
+    background: transparent;
+    text-align: center;
+    color: #808080;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    transition: 0.3s background-color;
+  }
+  
+  .menu-title:hover { 
+    background: #FFC20A; 
+    color: #FFFFFF;
+  }
+
+  .menu-dropdown {
+    display: block;
+    min-width: 30%;
+    height: 100vh;
+  }
+
+  .menu-dropdown > * {
+    height: 70px;
+    padding: 7% 10%;
+  }
+
+  .menu-dropdown:not(:hover) {
+    background-color: #0000001a;;
+  }
 }
