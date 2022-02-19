@@ -16,23 +16,23 @@ export default function Welcome(props) {
   const MLANNIVERSARY = 'MLANNIVERSARY';
   const VALENTINE = 'VALENTINE';
   const WHITEDAY = 'WHITRDAY';
-  const { mode } = useVisualMode(VALENTINE);
+  const { mode } = useVisualMode(NORMAL);
 
 
   const miniCharaImgs = Object.values(miniCharas)
   
   return (
     <div className="main-container">
-      {/* Welcome Page */}
-      <p className="title">Welcome to MLTD Calculator</p>
-      <img alt="random mini chara" src={miniCharaImgs[getRandom(39)]} />
-      
       {/* Holiday Banners */}
       {mode === ANNIVERSARY && <Anniversaries />}
       {mode === CHRISTMAS && <Christmas />}
       {mode === MLANNIVERSARY && <MLAnniversaries />}
       {mode === VALENTINE && <Valentine />}
       {mode === WHITEDAY && <WhiteDays />}
+      
+      {/* Welcome Page */}
+      <p className="title">Welcome to MLTD Calculator</p>
+      <img alt="random mini chara" src={miniCharaImgs[getRandom(39)]} />
     </div>
   );
 };
