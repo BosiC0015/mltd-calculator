@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+li {
+  font-size: x-large;
+}
+
 .menu {
   display: block;
   cursor: pointer;
@@ -83,7 +87,7 @@
 }
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 769px) {
   .App {
     display: flex;
     flex-direction: row;
@@ -121,7 +125,7 @@
   .menu-dropdown {
     display: block;
     min-width: 30%;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .menu-dropdown > * {
