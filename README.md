@@ -8,7 +8,7 @@ The application is mainly built with React JS and SCSS.
 >- This application is doing only rough calculation.
 >- The results are not rounded to integers, which can help users to adjust their plays.
 
-## URL
+## Website
 
 https://BosiC0015.github.io/mltd-calculator
 
