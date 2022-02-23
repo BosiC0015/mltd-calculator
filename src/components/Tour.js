@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+import { getDifference, getTourEventSongPlays, getTourItemsNeeded, getTourRegularSongTimes } from "../helpers/calculators";
 import ItemsQty from "./ItemsQty";
-import TourResult from "./TourResult";
+import Difference from "./Results/Difference";
+import EventSongPlays from "./Results/EventSongPlays";
+import ItemsNeeded from "./Results/ItemsNeeded";
+import RegularPlays from "./Results/RegularPlays";
 import "./styles.scss";
 
 
@@ -8,25 +12,36 @@ export default function Tour(props) {
   const [currentPoint, setCurrentPoint] = useState('');
   const [targetPoint, setTargetPoint] = useState('');
   const [eventItems, setEventItems] = useState('');
+  const [progress, setProgress] = useState(0);
   const [itemConsume, setItemConsume] = useState(1);
+  const [stamina, setStamina] = useState(15);
   const [loadResults, setLoadResults] = useState(false);
 
-  const difference = targetPoint - currentPoint;
+  // create an array with 20 elements, corresponding to the 20-stage progress parameter in game
+  // then map to a select array to render as options in the form
+  const progressArray = Array.from(Array(20).keys());
+  const selectProgress = progressArray.map(i => {
+    return (<option key={i}>{i}</option>);
+  });
 
-  const eventSongPlays = (items) => {
-    if (items === 3) {
-      return difference / 2160;
-    } else if (items === 2) {
-      return difference / 1440;
-    } else if (items === 1) {
-      return difference / 720;
-    };
-  };
+  // create an object with 7 key-value pairs, corresponding to 7 choises of stamina usage in game
+  const staminaArray = [15, 20, 25, 30, 40, 50, 60];
+  const selectStamina = staminaArray.map(i => {
+    return (<option key={i}>{i}</option>);
+  });
+
+  // calculations
+  const difference = getDifference(targetPoint, currentPoint);
+  const eventSongPlays = getTourEventSongPlays(difference, itemConsume);
+  const itemsNeeded = getTourItemsNeeded(difference);
+  const regularSongPlays = getTourRegularSongTimes(itemsNeeded, progress, stamina);
   
+  // set states to default when click on Clear
   const clear = () => {
     setCurrentPoint('');
     setTargetPoint('');
     setEventItems('');
+    setProgress(0);
     setItemConsume(1);
     setLoadResults(false);
   };
@@ -68,6 +83,16 @@ export default function Tour(props) {
             onChange={(event) => setEventItems(event.target.value)}
           />
         </div>
+        <div className="form-input">
+          <label>Your Progress</label>
+          <div className="form-progress">
+            <select
+              className="form-input__selection"
+              onChange={(event) => setProgress(event.target.value)}
+            >{ selectProgress }</select>
+            <label>/20</label>
+          </div>
+        </div>
         <div className="event-item-qty">
           <label>How many event items do you use:</label>
           <div className="event-item-qty-buttons">
@@ -76,10 +101,28 @@ export default function Tour(props) {
             <ItemsQty item={3} setItem={() => setItemConsume(3)} />
           </div>
         </div>
-        <TourResult
+        <div className="form-input">
+          <label>Stamina you consume each time:</label>
+          <select
+            className="form-input__selection"
+            onChange={(event) => setStamina(event.target.value)}
+          >{ selectStamina }</select>
+        </div>
+        <Difference
           load={loadResults}
           difference={difference}
-          eventSongPlays={eventSongPlays(itemConsume)}
+        />
+        <EventSongPlays
+          load={loadResults}
+          eventSongPlays={eventSongPlays}
+        />
+        <ItemsNeeded
+          load={loadResults}
+          itemsNeeded={itemsNeeded}
+        />
+        <RegularPlays
+          load={loadResults}
+          regularPlays={regularSongPlays}
         />
         <div className="buttons">
           <button className="buttons-clear" onClick={clear}>Clear</button>
