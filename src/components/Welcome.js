@@ -16,7 +16,7 @@ export default function Welcome(props) {
   const MLANNIVERSARY = 'MLANNIVERSARY';
   const VALENTINE = 'VALENTINE';
   const WHITEDAY = 'WHITRDAY';
-  const { mode } = useVisualMode(NORMAL);
+  const { mode } = useVisualMode(MLANNIVERSARY);
 
 
   const miniCharaImgs = Object.values(miniCharas)
