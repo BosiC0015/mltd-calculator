@@ -5,7 +5,7 @@ The MLTD Calculator is a simple web application for [IDOLM@STER MILLION LIVE THE
 The application is mainly built with React JS and SCSS.
 
 >❗️NOTICE: 
->- TThis application will be continuously updated before every feature is completed.
+>- This application will be continuously updated before every feature is completed.
 >- This application is doing only rough calculation.
 >- The results are not rounded to integers, which can help users to adjust their plays.
 
