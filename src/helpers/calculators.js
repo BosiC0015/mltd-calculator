@@ -14,13 +14,12 @@ export function getTourEventSongPlays(difference, items) {
   };
 };
 
-export function getTourItemsNeeded(difference) {
-  return difference / 720;
+export function getTourItemsNeeded(difference, currentItem) {
+  return (difference / 720) - currentItem;
 }
 
 export function getTourRegularSongTimes(itemsNeeded, progress, stamina) {
   const unit = stamina / 5;
   const total = ((itemsNeeded - 1) * 20) + (20 - progress);
-  console.log(total, unit)
   return total / unit;
 }
