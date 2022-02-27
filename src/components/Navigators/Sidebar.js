@@ -11,7 +11,7 @@ export default function Sidebar(props) {
   const miniCharaImgs = Object.values(miniCharas);
 
   return (
-    <ProSidebar image={miniCharaImgs[getRandom(39)]}>
+    <ProSidebar image={miniCharaImgs[getRandom(52)]}>
       <Menu iconShape="square">
         <a data-tip="Choose Event Type">
           <MenuItem id="sidebar-header" icon={<BsBookmarkStarFill />}>Choose Event Type</MenuItem>

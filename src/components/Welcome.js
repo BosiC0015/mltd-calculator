@@ -32,7 +32,7 @@ export default function Welcome(props) {
       
       {/* Welcome Page */}
       <p className="title">Welcome to MLTD Calculator</p>
-      <img alt="random mini chara" src={miniCharaImgs[getRandom(39)]} />
+      <img alt="random mini chara" src={miniCharaImgs[getRandom(52)]} />
     </div>
   );
 };
