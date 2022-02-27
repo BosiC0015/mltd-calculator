@@ -1,0 +1,27 @@
+.progress {
+  width: 100%;
+  height: auto;
+  padding: 5% 0;
+  background: inherit;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar {
+  height: 6vh;
+  max-height: 40px;
+  width: 2.5vw;
+  max-width: 5px;
+  border: none;
+  background-color: #dadada;
+
+  &-selected {
+    height: 6vh;
+    max-height: 40px;
+    width: 2.5vw;
+    max-width: 5px;
+    border: none;
+    background-color: #b10000;
+  }
+}

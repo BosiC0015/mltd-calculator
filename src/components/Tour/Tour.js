@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import { getDifference, getTourEventSongPlays, getTourItemsNeeded, getTourRegularSongTimes } from "../helpers/calculators";
-import ItemsQty from "./ItemsQty";
-import Difference from "./Results/Difference";
-import EventSongPlays from "./Results/EventSongPlays";
-import ItemsNeeded from "./Results/ItemsNeeded";
-import RegularPlays from "./Results/RegularPlays";
-import "./styles.scss";
+import { getDifference, getTourEventSongPlays, getTourItemsNeeded, getTourRegularSongTimes } from "../../helpers/calculators";
+import Progress from "./Progress";
+import ItemsQty from "../ItemsQty";
+import Results from "../Results/Result";
+import "../styles.scss";
 
 
 export default function Tour(props) {
@@ -33,7 +31,7 @@ export default function Tour(props) {
   // calculations
   const difference = getDifference(targetPoint, currentPoint);
   const eventSongPlays = getTourEventSongPlays(difference, itemConsume);
-  const itemsNeeded = getTourItemsNeeded(difference);
+  const itemsNeeded = getTourItemsNeeded(difference, eventItems);
   const regularSongPlays = getTourRegularSongTimes(itemsNeeded, progress, stamina);
   
   // set states to default when click on Clear
@@ -57,7 +55,7 @@ export default function Tour(props) {
         onSubmit={e => e.preventDefault()}
       >
         <div className="form-input">
-            <label>Current Point</label>
+            <label>Current Point:</label>
             <input
               className="form-input__input"
               placeholder="0"
@@ -66,7 +64,7 @@ export default function Tour(props) {
             />
         </div>
         <div className="form-input">
-          <label>Target Point</label>
+          <label>Target Point:</label>
           <input
             className="form-input__input"
             placeholder="0"
@@ -75,7 +73,7 @@ export default function Tour(props) {
           />
         </div>
         <div className="form-input">
-          <label>Event Items</label>
+          <label>Event Items:</label>
           <input
             className="form-input__input"
             placeholder="0"
@@ -83,8 +81,8 @@ export default function Tour(props) {
             onChange={(event) => setEventItems(event.target.value)}
           />
         </div>
-        <div className="form-input">
-          <label>Your Progress</label>
+        <div className="form-input-special">
+          <label>Your Progress:</label>
           <div className="form-progress">
             <select
               className="form-input__selection"
@@ -93,35 +91,28 @@ export default function Tour(props) {
             <label>/20</label>
           </div>
         </div>
+        <Progress progress={progress} />
         <div className="event-item-qty">
           <label>How many event items do you use:</label>
+          <label>(assume that only play 5* event songs)</label>
           <div className="event-item-qty-buttons">
             <ItemsQty item={1} setItem={() => setItemConsume(1)} />
             <ItemsQty item={2} setItem={() => setItemConsume(2)} />
             <ItemsQty item={3} setItem={() => setItemConsume(3)} />
           </div>
         </div>
-        <div className="form-input">
+        <div className="form-input-special">
           <label>Stamina you consume each time:</label>
           <select
             className="form-input__selection"
             onChange={(event) => setStamina(event.target.value)}
           >{ selectStamina }</select>
         </div>
-        <Difference
+        <Results
           load={loadResults}
           difference={difference}
-        />
-        <EventSongPlays
-          load={loadResults}
           eventSongPlays={eventSongPlays}
-        />
-        <ItemsNeeded
-          load={loadResults}
           itemsNeeded={itemsNeeded}
-        />
-        <RegularPlays
-          load={loadResults}
           regularPlays={regularSongPlays}
         />
         <div className="buttons">

@@ -20,7 +20,15 @@ form {
   flex-direction: column;
   padding: 8px 0;
 
-  &__input{
+  &-special {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+  }
+
+  &__input {
     height: 2rem;
   }
 
@@ -31,6 +39,11 @@ form {
   }
 }
 
+.form-progress {
+  display: flex;
+  flex-direction: row;
+}
+
 label {
   padding: 2%;
   font-size: 1.2rem;
@@ -38,7 +51,7 @@ label {
 }
 
 .event-item-qty {
-  padding: 3%;
+  padding: 8px 0;
   
   &-buttons {
     display: flex;
@@ -91,4 +104,5 @@ label {
 
 p {
   margin: 1% 0;
+  font-weight: 300;
 }

@@ -3,7 +3,7 @@ import Header from './components/Navigators/Header';
 import Sidebar from './components/Navigators/Sidebar';
 import Welcome from './components/Welcome';
 import Theater from './components/Theater';
-import Tour from './components/Tour';
+import Tour from './components/Tour/Tour';
 import TwinStage from './components/TwinStage';
 import Tune from './components/Tune';
 import Tale from './components/Tale';
