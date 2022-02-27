@@ -1,0 +1,13 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+a.navbar-brand {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+
+
+@media only screen and (min-width: 480px) {
+  nav.navbar {
+    display: none;
+  }
+}

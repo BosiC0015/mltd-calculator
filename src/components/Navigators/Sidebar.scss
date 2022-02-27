@@ -1,0 +1,36 @@
+$sidebar-bg-color: #ffffff;
+$sidebar-color: #000000;
+$highlight-color: #726437;
+$icon-bg-color: transparent;
+
+@import '~react-pro-sidebar/dist/scss/styles.scss';
+
+
+div.pro-sidebar {
+  width: 30%;
+  min-width: 160px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  
+  &-inner {
+    height: 100%;
+    min-height: 100vh;
+  }
+}
+
+div.pro-inner-item {
+  margin-left: 10%;
+}
+
+#sidebar-header > .pro-inner-item {
+  margin: 0 0 20px 0;
+  padding: 8px 15px;
+}
+
+
+@media only screen and (max-width: 480px) {
+  div.pro-sidebar {
+    display: none;
+  }
+}

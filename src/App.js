@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from './components/Header';
+import Header from './components/Navigators/Header';
+import Sidebar from './components/Navigators/Sidebar';
 import Welcome from './components/Welcome';
 import Theater from './components/Theater';
 import Tour from './components/Tour';
@@ -30,6 +31,7 @@ export default function App() {
   return (
     <div className="App">
       <Header select={select} />
+      <Sidebar select={select} />
       {mode === WELCOME && <Welcome />}
       {mode === THEATER && <Theater />}
       {mode === TOUR && <Tour />}
