@@ -3,6 +3,25 @@ export function getDifference (target, current) {
   return target - current;
 };
 
+// calculators for PSTheater events
+export function getTheaterEventSongPlays(difference, items) {
+  if (items === 720) {
+    return (difference / 2148);
+  } else if (items === 360) {
+    return (difference / 1074);
+  } else if (items === 180) {
+    return (difference / 537);
+  };
+};
+
+export function getTheaterItemsNeeded(difference, theaterPointPerItem) {
+  return difference / theaterPointPerItem;
+}
+
+export function getTheaterRegularSongTimes(itemsNeeded, eventItems) {
+  return (itemsNeeded - eventItems) / 595;
+};
+
 // calculators for PSTour events
 export function getTourEventSongPlays(difference, items) {
   if (items === 3) {
@@ -23,3 +42,14 @@ export function getTourRegularSongTimes(itemsNeeded, progress, stamina) {
   const total = ((itemsNeeded - 1) * 20) + (20 - progress);
   return total / unit;
 }
+
+// calculators for PSTune events
+export function getTuneEventSongPlays(items, desk, difference) {
+  if (items === 560) {
+    return difference / (1960 * (1 + desk * 0.01))
+  } else if (items === 280) {
+    return difference / (980 * (1 + desk * 0.01))
+  } else if (items === 140) {
+    return difference / (490 * (1 + desk * 0.01))
+  };
+};
