@@ -19,7 +19,7 @@ export default function Welcome(props) {
   const { mode } = useVisualMode(MLANNIVERSARY);
 
 
-  const miniCharaImgs = Object.values(miniCharas)
+  const miniCharaImgs = Object.values(miniCharas);
   
   return (
     <div className="main-container">

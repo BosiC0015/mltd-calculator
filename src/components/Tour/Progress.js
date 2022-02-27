@@ -11,9 +11,8 @@ export default function Progress(props) {
       progressObj[elm] = true;
     } else {
       progressObj[elm] = false;
-    }
+    };
   });
-  console.log(progressObj)
 
   const progress = progressArray.map(key => {
     return (
