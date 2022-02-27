@@ -14,7 +14,7 @@ export default function Sidebar(props) {
     <ProSidebar image={miniCharaImgs[getRandom(52)]}>
       <Menu iconShape="square">
         <a data-tip="Choose Event Type">
-          <MenuItem id="sidebar-header" icon={<BsBookmarkStarFill />}>Choose Event Type</MenuItem>
+          <MenuItem id="sidebar-header" icon={<BsBookmarkStarFill />}>CHOOSE EVENT TYPE</MenuItem>
         </a>
         <ReactTooltip place="bottom" type="dark" effect="solid"/>
         <MenuItem onClick={() => props.select('THEATER')}>PSTheater</MenuItem>
