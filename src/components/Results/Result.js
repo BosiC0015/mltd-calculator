@@ -13,17 +13,17 @@ export default function Results(props) {
     <div className="result">
       <h5>Here are your results:</h5>
       <Difference
-          difference={props.difference}
-        />
-        <EventSongPlays
-          eventSongPlays={props.eventSongPlays}
-        />
-        <ItemsNeeded
-          itemsNeeded={props.itemsNeeded}
-        />
-        <RegularPlays
-          regularPlays={props.regularPlays}
-        />
+        difference={props.difference}
+      />
+      <EventSongPlays
+        eventSongPlays={props.eventSongPlays}
+      />
+      <ItemsNeeded
+        itemsNeeded={props.itemsNeeded}
+      />
+      <RegularPlays
+        regularPlays={props.regularPlays}
+      />
     </div>
   );
 };
