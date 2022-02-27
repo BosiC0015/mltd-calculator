@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { getDifference, getTheaterEventSongPlays, getTheaterItemsNeeded, getTheaterRegularSongTimes, theaterPointPerItem } from "../helpers/calculators";
 import ItemsQty from "./ItemsQty";
-import TheaterResult from "./TheaterResult";
+import Results from "./Results/Result";
 import "./styles.scss";
 
 
@@ -11,28 +12,14 @@ export default function Theater(props) {
   const [itemConsume, setItemConsume] = useState(180);
   const [loadResults, setLoadResults] = useState(false);
 
-  const difference = targetPoint - currentPoint;
+  // calculations
+  const theaterPointPerItem = 537 / 180;
+  const difference = getDifference(targetPoint, currentPoint);
+  const eventSongPlays = getTheaterEventSongPlays(difference, itemConsume);
+  const itemsNeeded = getTheaterItemsNeeded(difference, theaterPointPerItem);
+  const regularSongPlays = getTheaterRegularSongTimes(itemsNeeded, eventItems);
 
-  const eventSongPlays = (items) => {
-    if (items === 720) {
-      return (difference / 2148);
-    } else if (items === 360) {
-      return (difference / 1074);
-    } else if (items === 180) {
-      return (difference / 537);
-    };
-  };
-
-  const regularSongPlays = (items) => {
-    if (items === 720) {
-      return ((eventSongPlays(720) * 720) - eventItems) / 595;
-    } else if (items === 360) {
-      return ((eventSongPlays(360) * 360) - eventItems) / 595;
-    } else if (items === 180) {
-      return ((eventSongPlays(180) * 180) - eventItems) / 595;
-    };
-  };
-
+  // set states to default when click on Clear
   const clear = () => {
     setCurrentPoint('');
     setTargetPoint('');
@@ -52,7 +39,7 @@ export default function Theater(props) {
         onSubmit={e => e.preventDefault()}
       >
         <div className="form-input">
-            <label>Current Point</label>
+            <label>Current Point:</label>
             <input
               className="form-input__input"
               placeholder="0"
@@ -61,7 +48,7 @@ export default function Theater(props) {
             />
         </div>
         <div className="form-input">
-          <label>Target Point</label>
+          <label>Target Point:</label>
           <input
             className="form-input__input"
             placeholder="0"
@@ -70,7 +57,7 @@ export default function Theater(props) {
           />
         </div>
         <div className="form-input">
-          <label>Event Items</label>
+          <label>Event Items:</label>
           <input
             className="form-input__input"
             placeholder="0"
@@ -86,17 +73,18 @@ export default function Theater(props) {
             <ItemsQty item={720} setItem={() => setItemConsume(720)} />
           </div>
         </div>
+        <Results
+          load={loadResults}
+          difference={difference}
+          eventSongPlays={eventSongPlays}
+          itemsNeeded={itemsNeeded}
+          regularPlays={regularSongPlays}
+        />
         <div className="buttons">
           <button className="buttons-clear" onClick={clear}>Clear</button>
           <button className="buttons-calc" onClick={() => setLoadResults(true)}>Calculate</button>
         </div>
       </form>
-      <TheaterResult
-        load={loadResults}
-        difference={difference}
-        eventSongPlays={eventSongPlays(itemConsume)}
-        regularSongPlays={regularSongPlays(itemConsume)}
-      />
     </div>
   );
 };
