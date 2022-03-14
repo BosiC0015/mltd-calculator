@@ -1,11 +1,11 @@
 import React from "react";
 import getRandom from "../../helpers/getRandom";
-import { chiristmas } from "../../helpers/holidayBanners";
+import { christmas } from "../../helpers/holidayBanners";
 import "./banners.scss";
 
 
 export default function Christmas(props) {
-  const chiristmasImgs = Object.values(chiristmas);
+  const christmasImgs = Object.values(christmas);
 
 
   return (
@@ -14,7 +14,7 @@ export default function Christmas(props) {
       <img
         className="banner"
         alt="mltd anniversary banner"
-        src={chiristmasImgs[getRandom(2)]}
+        src={christmasImgs[getRandom(2)]}
       />
     </div>
   );

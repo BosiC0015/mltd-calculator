@@ -14,7 +14,7 @@ export default function WhiteDays(props) {
       <img
         className="banner"
         alt="mltd anniversary banner"
-        src={whiteDaysImgs[getRandom(3)]}
+        src={whiteDaysImgs[getRandom(4)]}
       />
     </div>
   );

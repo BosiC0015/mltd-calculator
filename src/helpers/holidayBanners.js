@@ -2,18 +2,20 @@ const valentine = {
   2019: 'https://imas.gamedbs.jp/mlth/image/chara/other/1550122672001_9yrgeiuw.jpg',
   2020: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2020/wp_valentinesday_1280x720.jpg',
   2021: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2021/wp_valentinesday_1280x720.jpg',
-  2022: 'https://imas.gamedbs.jp/mlth/image/chara/other/1644765083001_nrde8bjf.png'
+  2022: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2022/wp_valentinesday_1280x720.jpg'
 };
 
 const mlAnniversaries = {
   7: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2020/wp_millionlive_1280x720.jpg',
-  8: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2021/wp_millionlive_1280x720.jpg'
+  8: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2021/wp_millionlive_1280x720.jpg',
+  9: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2022/wp_millionlive_1280x720.jpg'
 };
 
 const whiteDays = {
   2019: 'https://imas.gamedbs.jp/mlth/image/chara/other/1552539836001_z0vmei6o.jpg',
   2020: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2020/wp_whiteday_1280x720.jpg',
-  2021: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2021/wp_whiteday_1280x720.jpg'
+  2021: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2021/wp_whiteday_1280x720.jpg',
+  2022: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2022/wp_whiteday_1280x720.jpg'
 };
 
 const anniversaries = {
@@ -41,11 +43,11 @@ const kanshasai = {
   '2021~2022': ''
 };
 
-const chiristmas = {
+const christmas = {
   2019: 'https://imas.gamedbs.jp/mlth/image/chara/other/1584142196001_m0ybnj19.png',
   2020: 'https://imas.gamedbs.jp/mlth/image/chara/other/1608822227001_0ykoibhf.png',
   2021: ''
 };
 
 
-module.exports = { valentine, mlAnniversaries, whiteDays, anniversaries, imasAnniversaries, kanshasai, chiristmas }
+module.exports = { valentine, mlAnniversaries, whiteDays, anniversaries, imasAnniversaries, kanshasai, christmas }
