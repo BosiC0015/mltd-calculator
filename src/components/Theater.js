@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { getDifference, getTheaterEventSongPlays, getTheaterItemsNeeded, getTheaterRegularSongTimes, theaterPointPerItem } from "../helpers/calculators";
 import ItemsQty from "./ItemsQty";
 import Results from "./Results/Result";
+import TheaterRegularPlays from "./Results/TheaterRegularPlays";
 import "./styles.scss";
 
 
@@ -78,6 +79,9 @@ export default function Theater(props) {
           difference={difference}
           eventSongPlays={eventSongPlays}
           itemsNeeded={itemsNeeded}
+          />
+        <TheaterRegularPlays
+          load={loadResults}
           regularPlays={regularSongPlays}
         />
         <div className="buttons">
