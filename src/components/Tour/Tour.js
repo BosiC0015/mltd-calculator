@@ -116,6 +116,7 @@ export default function Tour(props) {
           itemsNeeded={itemsNeeded}
           />
         <TourRegularPlays
+          load={loadResults}
           regularPlays={regularSongPlays}
         />
         <div className="buttons">
