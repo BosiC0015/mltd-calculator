@@ -2,7 +2,6 @@ import React from "react";
 import Difference from "./Difference";
 import EventSongPlays from "./EventSongPlays";
 import ItemsNeeded from "./ItemsNeeded";
-import RegularPlays from "./RegularPlays";
 
 
 export default function Results(props) {

@@ -2,7 +2,7 @@ import React from "react";
 import "../styles.scss";
 
 
-export default function RegularPlays(props) {
+export default function TourRegularPlays(props) {
   return (
     <div className="result">
       <p>You still need to play {props.regularPlays} times regular songs,</p>

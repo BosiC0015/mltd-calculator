@@ -4,6 +4,7 @@ import Progress from "./Progress";
 import ItemsQty from "../ItemsQty";
 import Results from "../Results/Result";
 import "../styles.scss";
+import TourRegularPlays from "../Results/TourRegularPlays";
 
 
 export default function Tour(props) {
@@ -113,6 +114,8 @@ export default function Tour(props) {
           difference={difference}
           eventSongPlays={eventSongPlays}
           itemsNeeded={itemsNeeded}
+          />
+        <TourRegularPlays
           regularPlays={regularSongPlays}
         />
         <div className="buttons">
