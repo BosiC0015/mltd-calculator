@@ -21,9 +21,6 @@ export default function Results(props) {
       <ItemsNeeded
         itemsNeeded={props.itemsNeeded}
       />
-      <RegularPlays
-        regularPlays={props.regularPlays}
-      />
     </div>
   );
 };
