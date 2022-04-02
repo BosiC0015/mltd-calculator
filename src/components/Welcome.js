@@ -1,10 +1,11 @@
 import React from "react";
+import CurrentEvent from "./Banners/CurrentEvent";
+import Anniversaries from "./Banners/Anniversaries";
+import Christmas from "./Banners/Christmas";
+import MLAnniversaries from "./Banners/MLAnniversaries";
+import Valentine from "./Banners/Valentine";
+import WhiteDays from "./Banners/WhiteDays";
 import getRandom from "../helpers/getRandom";
-import Anniversaries from "./HolidayBanners/Anniversaries";
-import Christmas from "./HolidayBanners/Christmas";
-import MLAnniversaries from "./HolidayBanners/MLAnniversaries";
-import Valentine from "./HolidayBanners/Valentine";
-import WhiteDays from "./HolidayBanners/WhiteDays";
 import { miniCharas } from "../helpers/miniCharas";
 import useVisualMode from "../hooks/useVisualHook";
 
@@ -28,7 +29,7 @@ export default function Welcome() {
       return MLANNIVERSARY;
     } else if (month === 3 && day < 20) {
       return WHITEDAY;
-    } else if ((month === 6 && day >= 25) || month === 7 && day < 20) {
+    } else if ((month === 6 && day >= 25) || (month === 7 && day < 20)) {
       return ANNIVERSARY;
     } else if (month === 12 && day >= 20) {
       return CHRISTMAS;
@@ -45,6 +46,12 @@ export default function Welcome() {
   
   return (
     <div className="main-container">
+      {/* Welcome Page */}
+      <p className="title">Welcome to MLTD Calculator</p>
+
+      {/* current event */}
+      <CurrentEvent />
+
       {/* Holiday Banners */}
       {mode === ANNIVERSARY && <Anniversaries />}
       {mode === CHRISTMAS && <Christmas />}
@@ -52,8 +59,7 @@ export default function Welcome() {
       {mode === VALENTINE && <Valentine />}
       {mode === WHITEDAY && <WhiteDays />}
       
-      {/* Welcome Page */}
-      <p className="title">Welcome to MLTD Calculator</p>
+      {/* random mini */}
       <img alt="random mini chara" src={miniCharaImgs[getRandom(52)]} />
     </div>
   );
