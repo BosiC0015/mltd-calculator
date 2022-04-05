@@ -8,6 +8,7 @@ import WhiteDays from "./Banners/WhiteDays";
 import getRandom from "../helpers/getRandom";
 import { miniCharas } from "../helpers/miniCharas";
 import useVisualMode from "../hooks/useVisualHook";
+import "./styles.scss";
 
 
 export default function Welcome() {
@@ -47,7 +48,11 @@ export default function Welcome() {
   return (
     <div className="main-container">
       {/* Welcome Page */}
-      <p className="title">Welcome to MLTD Calculator</p>
+      <div className="welcome">
+        <img className="welcome-mini" alt="random mini chara" src={miniCharaImgs[getRandom(52)]} />
+        <p className="title">Welcome to MLTD Calculator</p>
+        <img className="welcome-mini" alt="random mini chara" src={miniCharaImgs[getRandom(52)]} />
+      </div>
 
       {/* current event */}
       <CurrentEvent />
@@ -57,10 +62,7 @@ export default function Welcome() {
       {mode === CHRISTMAS && <Christmas />}
       {mode === MLANNIVERSARY && <MLAnniversaries />}
       {mode === VALENTINE && <Valentine />}
-      {mode === WHITEDAY && <WhiteDays />}
-      
-      {/* random mini */}
-      <img alt="random mini chara" src={miniCharaImgs[getRandom(52)]} />
+      {mode === WHITEDAY && <WhiteDays />}      
     </div>
   );
 };
