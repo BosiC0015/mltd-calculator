@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { getDifference, getTuneEventSongPlays } from "../helpers/calculators";
 import ItemsQty from "./ItemsQty";
 import TuneResult from "./TuneResult";
 import "./styles.scss";
@@ -12,8 +13,11 @@ export default function Tune(props) {
   const [desk, setDesk] = useState(0);
   const [loadResults, setLoadResults] = useState(false);
 
-  const difference = targetPoint - currentPoint;
+  // calculations
+  const difference = getDifference(targetPoint, currentPoint);
+  const eventSongPlays = getTuneEventSongPlays(itemConsume, desk, difference);
 
+  // desk percent
   const deskArr = Array.from(Array(21).keys());
   const select = deskArr.map(elm => {
     return (
@@ -21,15 +25,15 @@ export default function Tune(props) {
     )
   });
 
-  const eventSongPlays = (items, desk) => {
-    if (items === 560) {
-      return difference / (1960 * (1 + desk * 0.01))
-    } else if (items === 280) {
-      return difference / (980 * (1 + desk * 0.01))
-    } else if (items === 140) {
-      return difference / (490 * (1 + desk * 0.01))
-    };
-  };
+  // const eventSongPlays = (items, desk) => {
+  //   if (items === 560) {
+  //     return difference / (1960 * (1 + desk * 0.01))
+  //   } else if (items === 280) {
+  //     return difference / (980 * (1 + desk * 0.01))
+  //   } else if (items === 140) {
+  //     return difference / (490 * (1 + desk * 0.01))
+  //   };
+  // };
 
   const regularSongPlays = (items, desk) => {
     if (items === 560) {
@@ -88,7 +92,7 @@ export default function Tune(props) {
           />
         </div>
         <div className="form-input">
-          <label>Your Desk Percentage</label>
+          <label>Your Desk Bonus Percentage</label>
           <select className="form-input__input" onChange={(event) => setDesk(event.target.value)}>
             { select }
           </select>
@@ -109,8 +113,8 @@ export default function Tune(props) {
       <TuneResult
         load={loadResults}
         difference={difference}
-        eventSongPlays={eventSongPlays(itemConsume, desk)}
-        regularSongPlays={regularSongPlays(itemConsume, desk)}
+        eventSongPlays={eventSongPlays}
+        regularSongPlays={regularSongPlays}
       />
     </div>
   );
