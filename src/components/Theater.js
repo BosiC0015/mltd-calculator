@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { getDifference, getTheaterEventSongPlays, getTheaterItemsNeeded, getTheaterRegularSongTimes, theaterPointPerItem } from "../helpers/calculators";
+import { getDifference, getTheaterEventSongPlays, getTheaterItemsNeeded, getTheaterRegularSongTimes } from "../helpers/calculators";
 import ItemsQty from "./ItemsQty";
 import Results from "./Results/Result";
 import TheaterRegularPlays from "./Results/TheaterRegularPlays";
