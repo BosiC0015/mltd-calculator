@@ -7,7 +7,7 @@ export default function CurrentEvent() {
   return (
     <div>
       <p>Current Event: MillionLive Collection</p>
-      <Countdown date="2022-04-16T07:59:59" />
+      <Countdown date="2022-04-16T07:59:59.000-04:00" />
       {/* <div className="event-essentials">
         <p>🔺Ranking SR: Noriko</p>
         <p>🔸Point SR: Arisa</p>
