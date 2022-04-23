@@ -7,6 +7,7 @@ import "./styles.scss";
 export default function Tale(props) {
   const [currentPoint, setCurrentPoint] = useState('');
   const [targetPoint, setTargetPoint] = useState('');
+  const [stamina, setStamina] = useState(30);
   const [loadResults, setLoadResults] = useState(false);
 
   // calculation
@@ -15,6 +16,17 @@ export default function Tale(props) {
     return difference / 3000;
   }
   const eventSongPlays = eventSongPlay(difference);
+
+  const staminaArray = [15, 20, 25, 30];
+  const selectStamina = staminaArray.map(i => {
+    return (<option key={i}>{i}</option>);
+  });
+
+  const getWorkTimes = (stamina, eventSongPlays) => {
+    if (stamina === 30) {
+      return eventSongPlays * 6;
+    }
+  }
 
   // set states to default when click on Clear
   const clear = () => {
@@ -51,7 +63,13 @@ export default function Tale(props) {
             onChange={(event) => setTargetPoint(event.target.value)}
           />
         </div>
-        <p>30 stamina</p>
+        <div className="form-input-special">
+          <label>Stamina you consume each time:</label>
+          <select
+            className="form-input__selection"
+            onChange={(event) => setStamina(event.target.value)}
+          >{ selectStamina }</select>
+        </div>
         <Results
           load={loadResults}
           difference={difference}
