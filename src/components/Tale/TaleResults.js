@@ -1,6 +1,6 @@
 import React from "react";
-import Difference from "./Difference";
-import EventSongPlays from "./EventSongPlays";
+import Difference from "../Results/Difference";
+import EventSongPlays from "../Results/EventSongPlays";
 
 
 export default function TaleResults(props) {

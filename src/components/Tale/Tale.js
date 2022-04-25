@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { getDifference } from "../helpers/calculators";
-import TaleResults from "./Results/TaleResults";
-import "./styles.scss";
+import { getDifference } from "../../helpers/calculators";
+import TaleResults from "./TaleResults";
+import "../styles.scss";
 
 
 export default function Tale(props) {
