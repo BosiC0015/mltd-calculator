@@ -11,15 +11,11 @@ export default function TaleResults(props) {
   return (
     <div className="result">
       <h5>Here are your results:</h5>
-      <Difference
-        difference={props.difference}
-      />
-      <EventSongPlays
-        eventSongPlays={props.eventSongPlays}
-      />
+      <Difference difference={props.difference} />
+      <EventSongPlays eventSongPlays={props.eventSongPlays} />
       <div className="result">
-      <p>You still need to work {props.workTimes} times.</p>
-    </div>
+        <p>You still need to work {props.workTimes} times.</p>
+      </div>
     </div>
   );
 };
