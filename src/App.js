@@ -5,7 +5,7 @@ import Welcome from './components/Welcome';
 import Theater from './components/Theater';
 import Tour from './components/Tour/Tour';
 import TwinStage from './components/TwinStage';
-import Tune from './components/Tune';
+import Tune from './components/Tune/Tune';
 import Tale from './components/Tale/Tale';
 import Treasure from './components/Treasure';
 import Trust from './components/Trust';

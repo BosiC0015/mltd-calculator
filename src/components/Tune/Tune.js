@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { getDifference, getTuneEventSongPlays } from "../helpers/calculators";
-import ItemsQty from "./ItemsQty";
+import { getDifference, getTuneEventSongPlays } from "../../helpers/calculators";
+import ItemsQty from "../ItemsQty";
 import TuneResult from "./TuneResult";
-import "./styles.scss";
+import "../styles.scss";
 
 
 export default function Tune(props) {
@@ -24,16 +24,6 @@ export default function Tune(props) {
       <option key={elm}>{elm}</option>
     )
   });
-
-  // const eventSongPlays = (items, desk) => {
-  //   if (items === 560) {
-  //     return difference / (1960 * (1 + desk * 0.01))
-  //   } else if (items === 280) {
-  //     return difference / (980 * (1 + desk * 0.01))
-  //   } else if (items === 140) {
-  //     return difference / (490 * (1 + desk * 0.01))
-  //   };
-  // };
 
   const regularSongPlays = (items, desk) => {
     if (items === 560) {
@@ -105,17 +95,17 @@ export default function Tune(props) {
             <ItemsQty item={560} setItem={() => setItemConsume(560)} />
           </div>
         </div>
+        <TuneResult
+          load={loadResults}
+          difference={difference}
+          eventSongPlays={eventSongPlays}
+          regularSongPlays={regularSongPlays}
+        />
         <div className="buttons">
           <button className="buttons-clear" onClick={clear}>Clear</button>
           <button className="buttons-calc" onClick={() => setLoadResults(true)}>Calculate</button>
         </div>
       </form>
-      <TuneResult
-        load={loadResults}
-        difference={difference}
-        eventSongPlays={eventSongPlays}
-        regularSongPlays={regularSongPlays}
-      />
     </div>
   );
 };
