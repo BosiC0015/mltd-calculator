@@ -9,7 +9,7 @@ export default function CurrentEvent() {
       {/* <p>Current Event: Platinum Star Theater: </p> */}
       {/* <p>Current Event: Millionlive Collection</p> */}
       <p>Current Event: Platinum Star Tour: CHEER UP! HEARTS UP!</p>
-      <Countdown date="2022-05-08T20:59:59.000+09:00" />
+      <p>Time Remaining: <Countdown date="2022-05-08T20:59:59.000+09:00" /></p>
       <div className="event-essentials">
         <p>🔺Ranking SR: Anna</p>
         <p>🔸Point SR: Kana</p>
