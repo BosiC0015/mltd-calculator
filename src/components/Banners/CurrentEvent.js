@@ -7,15 +7,17 @@ export default function CurrentEvent() {
   return (
     <div>
       {/* <p>Current Event: Platinum Star Theater: </p> */}
-      {/* <p>Current Event: Millionlive Collection</p> */}
-      <p>Current Event: Platinum Star Tour: CHEER UP! HEARTS UP!</p>
+      <p>Current Event: Millionlive Collection</p>
+      {/* <p>Current Event: Platinum Star Tour: CHEER UP! HEARTS UP!</p> */}
       <p>Time Remaining: <Countdown date="2022-05-08T20:59:59.000+09:00" /></p>
       <div className="event-essentials">
-        <p>🔺Ranking SR: Anna</p>
+        {/* <p>🔺Ranking SR: Anna</p>
         <p>🔸Point SR: Kana</p>
-        <p>🔹Participating: Julia, Haruka</p>
+        <p>🔹Participating: Julia, Haruka</p> */}
+        <p>🔸SR: Miki, Kotoha</p>
+        <p>🔹R: Shiho</p>
       </div>
-      <img className="banner" src="https://pbs.twimg.com/media/FRZpGx0VcAAMlMv?format=png&name=900x900" alt="event" />
+      <img className="banner" src="https://pbs.twimg.com/media/FRaxgmoVUAAu-Qt?format=png&name=900x900" alt="event" />
     </div>
   )
 }
