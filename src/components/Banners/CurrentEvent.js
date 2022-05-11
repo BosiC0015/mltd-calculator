@@ -14,8 +14,8 @@ export default function CurrentEvent() {
         {/* <p>🔺Ranking SR: Anna</p>
         <p>🔸Point SR: Kana</p>
         <p>🔹Participating: Julia, Haruka</p> */}
-        <p>🔸SR: Miki, Kotoha</p>
-        <p>🔹R: Shiho</p>
+        <p>🔸SR: Miki, Shiho</p>
+        <p>🔹R: Kotoha</p>
       </div>
       <img className="banner" src="https://pbs.twimg.com/media/FRaxgmoVUAAu-Qt?format=png&name=900x900" alt="event" />
     </div>
