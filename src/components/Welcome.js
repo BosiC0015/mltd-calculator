@@ -1,5 +1,5 @@
 import React from "react";
-import CurrentEvent from "./Banners/CurrentEvent";
+import CurrentEvent from "./CurrentEvent/CurrentEvent";
 import Anniversaries from "./Banners/Anniversaries";
 import Christmas from "./Banners/Christmas";
 import MLAnniversaries from "./Banners/MLAnniversaries";
