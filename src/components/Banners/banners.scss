@@ -4,4 +4,9 @@ img.banner {
 
 .event-essentials {
   text-align: left;
+
+  &-pst {
+    text-align: left;
+    padding: 0 10%;
+  }
 }
