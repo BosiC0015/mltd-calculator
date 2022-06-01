@@ -1,7 +1,7 @@
 import React from "react";
 import PSTEvent from "./PSTEvent";
 import MilliColle from "./MilliColle";
-import Working from "./Working";
+import TalkParty from "./TalkParty";
 import useVisualMode from "../../hooks/useVisualHook";
 import "../Banners/banners.scss";
 
@@ -9,15 +9,15 @@ import "../Banners/banners.scss";
 export default function CurrentEvent() {
   const PST = 'PST';
   const MILLICOLLE = 'MILLICOLLE';
-  const MILLIONWORKING = 'MILLIONWORKING';
+  const TALKPARTY = 'TALKPARTY';
 
-  const { mode } = useVisualMode(PST);
+  const { mode } = useVisualMode(TALKPARTY);
 
   return (
     <div>
       {mode === PST && <PSTEvent />}
       {mode === MILLICOLLE && <MilliColle />}
-      {mode === MILLIONWORKING && <Working />}
+      {mode === TALKPARTY && <TalkParty />}
     </div>
   )
 }
