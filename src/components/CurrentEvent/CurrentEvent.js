@@ -11,7 +11,7 @@ export default function CurrentEvent() {
   const MILLICOLLE = 'MILLICOLLE';
   const TALKPARTY = 'TALKPARTY';
 
-  const { mode } = useVisualMode(TALKPARTY);
+  const { mode } = useVisualMode(PST);
 
   return (
     <div>
