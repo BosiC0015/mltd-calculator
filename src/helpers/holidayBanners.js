@@ -28,7 +28,10 @@ const anniversaries = {
   '4th4d': 'https://imas.gamedbs.jp/mlth/image/chara/other/1624547659001_w651hzbj.png',
   '4th3d': 'https://imas.gamedbs.jp/mlth/image/chara/other/1624633728001_8nbiue3h.png',
   '4th2d': 'https://imas.gamedbs.jp/mlth/image/chara/other/1624719688001_widr3fa4.png',
-  '4th1d': 'https://imas.gamedbs.jp/mlth/image/chara/other/1624806534001_14tbj0ih.png'
+  '4th1d': 'https://imas.gamedbs.jp/mlth/image/chara/other/1624806534001_14tbj0ih.png',
+  '5th3d': 'https://millionlive-theaterdays.idolmaster-official.jp/5th-anv/assets/img/wallpaper/dl/img_5th-wallpaper_3.jpg',
+  '5th2d': 'https://millionlive-theaterdays.idolmaster-official.jp/5th-anv/assets/img/wallpaper/dl/img_5th-wallpaper_2.jpg',
+  '5th1d': 'https://millionlive-theaterdays.idolmaster-official.jp/5th-anv/assets/img/wallpaper/dl/img_5th-wallpaper_1.jpg'
 };
 
 const imasAnniversaries = {
