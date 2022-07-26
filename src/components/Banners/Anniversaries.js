@@ -10,11 +10,11 @@ export default function Anniversaries(props) {
 
   return (
     <div className="holiday-banner">
-      <p className="title">MLTD Anniversary is coming!🎉</p>
+      <p className="title">Happy MLTD Anniversary!🎉</p>
       <img
         className="banner"
         alt="mltd anniversary banner"
-        src={anniversariesImgs[getRandom(10)]}
+        src={anniversariesImgs[getRandom(13)]}
       />
     </div>
   );
