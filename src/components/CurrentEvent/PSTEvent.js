@@ -6,7 +6,7 @@ import "../Banners/banners.scss";
 export default function PSTEvent() {
   return (
     <div>
-      <p>Current Event: Platinum Star Theater: Understand? Understand!</p>
+      <p>Current Event: Platinum Star Tale: Criminally Dinner ～正餐とイーヴルナイフ～</p>
         <p>Time Remaining: <Countdown date="2022-07-28T20:59:59.000+09:00" /></p>
         <div className="event-essentials-pst">
           <p>🔺Ranking SR: Miki</p>
