@@ -54,15 +54,15 @@ export default function Welcome() {
         <img className="welcome-mini" alt="random mini chara" src={miniCharaImgs[getRandom(52)]} />
       </div>
 
-      {/* current event */}
-      <CurrentEvent />
-
       {/* Holiday Banners */}
       {mode === ANNIVERSARY && <Anniversaries />}
       {mode === CHRISTMAS && <Christmas />}
       {mode === MLANNIVERSARY && <MLAnniversaries />}
       {mode === VALENTINE && <Valentine />}
-      {mode === WHITEDAY && <WhiteDays />}      
+      {mode === WHITEDAY && <WhiteDays />}
+
+      {/* current event */}
+      <CurrentEvent />
     </div>
   );
 };
