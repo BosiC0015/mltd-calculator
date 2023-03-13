@@ -13,8 +13,8 @@ export default function WhiteDays(props) {
       <p className="title">Happy White Days!</p>
       <img
         className="banner"
-        alt="mltd anniversary banner"
-        src={whiteDaysImgs[getRandom(4)]}
+        alt="mltd white days banner"
+        src={whiteDaysImgs[getRandom(5)]}
       />
     </div>
   );

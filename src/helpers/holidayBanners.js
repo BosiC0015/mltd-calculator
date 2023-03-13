@@ -13,9 +13,10 @@ const mlAnniversaries = {
 
 const whiteDays = {
   2019: 'https://imas.gamedbs.jp/mlth/image/chara/other/1552539836001_z0vmei6o.jpg',
-  2020: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2020/wp_whiteday_1280x720.jpg',
-  2021: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2021/wp_whiteday_1280x720.jpg',
-  2022: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2022/wp_whiteday_1280x720.jpg'
+  2020: 'https://imas.gamedbs.jp/mlth/image/chara/other/1584141024001_waqzy8u6.png',
+  2021: 'https://imas.gamedbs.jp/mlth/image/chara/other/1623910459001_85hersac.png',
+  2022: 'https://imas.gamedbs.jp/mlth/image/chara/other/1647183840001_7o9ut2pf.png',
+  2023: 'https://imas.gamedbs.jp/mlth/image/chara/other/1678719655001_8kl3c2vr.png'
 };
 
 const anniversaries = {
