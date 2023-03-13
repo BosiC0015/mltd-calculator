@@ -1,14 +1,16 @@
 const valentine = {
   2019: 'https://imas.gamedbs.jp/mlth/image/chara/other/1550122672001_9yrgeiuw.jpg',
-  2020: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2020/wp_valentinesday_1280x720.jpg',
-  2021: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2021/wp_valentinesday_1280x720.jpg',
-  2022: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2022/wp_valentinesday_1280x720.jpg'
+  2020: 'https://imas.gamedbs.jp/mlth/image/chara/other/1592368427001_w5hd6n9b.png',
+  2021: 'https://imas.gamedbs.jp/mlth/image/chara/other/1613229890001_zf8vb06t.png',
+  2022: 'https://imas.gamedbs.jp/mlth/image/chara/other/1644765083001_nrde8bjf.png',
+  2023: 'https://imas.gamedbs.jp/mlth/image/chara/other/1676300479001_tfyghwdu.png'
 };
 
 const mlAnniversaries = {
-  7: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2020/wp_millionlive_1280x720.jpg',
-  8: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2021/wp_millionlive_1280x720.jpg',
-  9: 'https://millionlive.idolmaster.jp/theaterdays/wallpaper2022/wp_millionlive_1280x720.jpg'
+  7: 'https://imas.gamedbs.jp/mlth/image/chara/other/1592368439001_a5penhm8.png',
+  8: 'https://imas.gamedbs.jp/mlth/image/chara/other/1623910460002_7l3p0cx8.png',
+  9: 'https://imas.gamedbs.jp/mlth/image/chara/other/1645931101001_i64s29yl.png',
+  10: 'https://imas.gamedbs.jp/mlth/image/chara/other/1677467537001_kcn4qy1b.png'
 };
 
 const whiteDays = {
@@ -50,7 +52,7 @@ const kanshasai = {
 const christmas = {
   2019: 'https://imas.gamedbs.jp/mlth/image/chara/other/1584142196001_m0ybnj19.png',
   2020: 'https://imas.gamedbs.jp/mlth/image/chara/other/1608822227001_0ykoibhf.png',
-  2021: ''
+  2022: 'https://imas.gamedbs.jp/mlth/image/chara/other/1671948599001_inrm1ecu.png'
 };
 
 
