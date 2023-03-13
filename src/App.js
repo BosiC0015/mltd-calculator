@@ -9,6 +9,7 @@ import Tune from './components/Tune/Tune';
 import Tale from './components/Tale/Tale';
 import Treasure from './components/Treasure';
 import Trust from './components/Trust';
+import Time from './components/Time';
 import useVisualMode from './hooks/useVisualHook';
 import './App.scss';
 
@@ -22,6 +23,7 @@ export default function App() {
   const TALE = 'TALE';
   const TREASURE = 'TREASURE';
   const TRUST = 'TRUST';
+  const TIME = 'TIME';
   const { mode, transition } = useVisualMode(WELCOME);
 
   const select = (event) => {
@@ -40,6 +42,7 @@ export default function App() {
       {mode === TALE && <Tale />}
       {mode === TREASURE && <Treasure />}
       {mode === TRUST && <Trust />}
+      {mode === TIME && <Time />}
     </div>
   );
 }
