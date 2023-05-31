@@ -13,7 +13,7 @@ export default function Sidebar(props) {
   return (
     <ProSidebar image={miniCharaImgs[getRandom(52)]}>
       <Menu iconShape="square">
-        <MenuItem id="sidebar-header" icon={<BsBookmarkStarFill />} data-tip="Choose Event Type">CHOOSE EVENT TYPE</MenuItem>
+        <MenuItem id="sidebar-header" icon={<BsBookmarkStarFill />} data-tip="Choose Event Type" onClick={() => props.select('WELCOME')}>CHOOSE EVENT TYPE</MenuItem>
         <ReactTooltip place="bottom" type="dark" effect="solid"/>
         <MenuItem onClick={() => props.select('THEATER')}>PSTheater</MenuItem>
         <MenuItem onClick={() => props.select('TOUR')}>PSTour</MenuItem>
@@ -22,6 +22,8 @@ export default function Sidebar(props) {
         <MenuItem onClick={() => props.select('TALE')}>PSTale</MenuItem>
         <MenuItem onClick={() => props.select('TREASURE')}>PSTreaure</MenuItem>
         <MenuItem onClick={() => props.select('TRUST')}>PSTrust</MenuItem>
+        <MenuItem></MenuItem>
+        <MenuItem onClick={() => props.select('WELCOME')}>BACK TO HOME</MenuItem>
       </Menu>
     </ProSidebar>
   )
