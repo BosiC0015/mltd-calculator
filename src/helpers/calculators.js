@@ -5,21 +5,33 @@ export function getDifference (target, current) {
 
 // calculators for PSTheater events
 export function getTheaterEventSongPlays(difference, items) {
+  let result;
+
   if (items === 720) {
-    return (difference / 2148);
+    result = (difference / 2148);
   } else if (items === 360) {
-    return (difference / 1074);
+    result = (difference / 1074);
   } else if (items === 180) {
-    return (difference / 537);
+    result = (difference / 537);
   };
+
+  const ceiledResult = Math.ceil(result);
+
+  return ceiledResult
 };
 
 export function getTheaterItemsNeeded(difference, theaterPointPerItem) {
-  return difference / theaterPointPerItem;
+  let result;
+  result = difference / theaterPointPerItem;
+  const ceiledResult = Math.ceil(result);
+  return ceiledResult;
 }
 
 export function getTheaterRegularSongTimes(itemsNeeded, eventItems) {
-  return (itemsNeeded - eventItems) / 595;
+  let result;
+  result = (itemsNeeded - eventItems) / 595;
+  const ceiledResult = Math.ceil(result);
+  return ceiledResult;
 };
 
 // calculators for PSTour events
