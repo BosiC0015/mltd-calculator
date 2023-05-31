@@ -40,7 +40,7 @@ export default function Theater(props) {
         onSubmit={e => e.preventDefault()}
       >
         <div className="form-input">
-            <label>Current Point:</label>
+            <label className="form-input__label">Current Point:</label>
             <input
               className="form-input__input"
               placeholder="0"
@@ -49,7 +49,7 @@ export default function Theater(props) {
             />
         </div>
         <div className="form-input">
-          <label>Target Point:</label>
+          <label className="form-input__label">Target Point:</label>
           <input
             className="form-input__input"
             placeholder="0"
@@ -58,7 +58,7 @@ export default function Theater(props) {
           />
         </div>
         <div className="form-input">
-          <label>Event Items:</label>
+          <label className="form-input__label">Event Items:</label>
           <input
             className="form-input__input"
             placeholder="0"

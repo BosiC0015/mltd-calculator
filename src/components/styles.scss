@@ -16,8 +16,8 @@
 
 .title {
   margin: 1% 0;
-  font-size: large;
-  font-weight: 500;
+  font-size: 1.75rem;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -121,4 +121,20 @@ label {
 p {
   margin: 1% 0;
   font-weight: 300;
+}
+
+@media only screen and (min-width: 720px) {
+  .form-input{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "input-label input-field";
+
+    &__label {
+      grid-template: input-label;
+    }
+
+    &__input {
+      grid-template: input-field;
+    }
+  }
 }
