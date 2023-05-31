@@ -7,17 +7,17 @@ export default function PSTEvent() {
   return (
     <div>
       <p className="event-title">Current Event</p>
-      <p className="event-title">Platinum Star Tour: 電波感傷</p>
-        <p>Time Remaining: <Countdown date="2023-05-25T20:59:59.000+09:00" /></p>
+      <p className="event-title">Platinum Star Theater: Legend Girls!!</p>
+        <p>Time Remaining: <Countdown date="2023-06-07T20:59:59.000+09:00" /></p>
         <div className="event-essentials-pst">
-          <p>🔺Ranking SR: Kaori</p>
-          <p>🔸Point SR: Tsumugi</p>
-          <p>🔹Participating: /</p>
+          <p>🔺Ranking SR: Shizuka</p>
+          <p>🔸Point SR: Haruka</p>
+          <p>🔹Participating: Yuriko, Serika, Tomoka</p>
         </div>
         <img 
           className="banner" 
           alt="event" 
-          src="https://pbs.twimg.com/media/FwUcyNmaEAAWg02?format=png&name=900x900" 
+          src="https://pbs.twimg.com/media/FxQ4_E8acAAzKNH?format=png&name=900x900" 
         />
     </div>
   );
