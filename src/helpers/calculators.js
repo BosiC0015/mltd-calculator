@@ -47,13 +47,13 @@ export function getTourEventSongPlays(difference, items) {
 
 export function getTourItemsNeeded(difference, currentItem) {
   return (difference / 720) - currentItem;
-}
+};
 
 export function getTourRegularSongTimes(itemsNeeded, progress, stamina) {
   const unit = stamina / 5;
   const total = ((itemsNeeded - 1) * 20) + (20 - progress);
   return total / unit;
-}
+};
 
 // calculators for PSTune events
 export function getTuneEventSongPlays(items, desk, difference) {
