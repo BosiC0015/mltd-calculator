@@ -17,7 +17,7 @@ export function getTheaterEventSongPlays(difference, items) {
 
   const ceiledResult = Math.ceil(result);
 
-  return ceiledResult
+  return ceiledResult;
 };
 
 export function getTheaterItemsNeeded(difference, theaterPointPerItem) {
