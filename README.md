@@ -7,7 +7,7 @@ The application is mainly built with React JS and SCSS.
 >❗️NOTICE: 
 >- This application will be continuously updated before every feature is completed.
 >- This application is doing only rough calculation.
->- The results are not rounded to integers, which can help users to adjust their plays.
+>- Some results are rounded to ceil, but it may not be the accurate number.
 
 ## Website
 
