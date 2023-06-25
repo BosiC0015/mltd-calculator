@@ -14,7 +14,7 @@ export default function Anniversaries(props) {
       <img
         className="banner"
         alt="mltd anniversary banner"
-        src={anniversariesImgs[getRandom(13)]}
+        src={anniversariesImgs[getRandom(17)]}
       />
     </div>
   );
