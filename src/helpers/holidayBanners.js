@@ -36,7 +36,9 @@ const anniversaries = {
   '5th2d': 'https://millionlive-theaterdays.idolmaster-official.jp/5th-anv/assets/img/wallpaper/dl/img_5th-wallpaper_2.jpg',
   '5th1d': 'https://millionlive-theaterdays.idolmaster-official.jp/5th-anv/assets/img/wallpaper/dl/img_5th-wallpaper_1.jpg',
   '6th4d': 'https://pbs.twimg.com/media/FzSPLBiaQAAyuCe?format=png&name=large',
-  '6th3d': 'https://pbs.twimg.com/media/FzSPXOkaAAAp1eJ?format=png&name=large'
+  '6th3d': 'https://pbs.twimg.com/media/FzSPXOkaAAAp1eJ?format=png&name=large',
+  '6th2d': 'https://pbs.twimg.com/media/FzSPnpMaEAASpMg?format=png&name=large',
+  '6th1d': 'https://pbs.twimg.com/media/FzSQGSQacAAam3Q?format=png&name=large'
 };
 
 const imasAnniversaries = {
