@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mltd-calculator/static/css/main.a1f37fbd.css",
-    "main.js": "/mltd-calculator/static/js/main.1b8375a5.js",
+    "main.js": "/mltd-calculator/static/js/main.cebf52c1.js",
     "static/js/787.908646f8.chunk.js": "/mltd-calculator/static/js/787.908646f8.chunk.js",
     "index.html": "/mltd-calculator/index.html",
     "main.a1f37fbd.css.map": "/mltd-calculator/static/css/main.a1f37fbd.css.map",
-    "main.1b8375a5.js.map": "/mltd-calculator/static/js/main.1b8375a5.js.map",
+    "main.cebf52c1.js.map": "/mltd-calculator/static/js/main.cebf52c1.js.map",
     "787.908646f8.chunk.js.map": "/mltd-calculator/static/js/787.908646f8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1f37fbd.css",
-    "static/js/main.1b8375a5.js"
+    "static/js/main.cebf52c1.js"
   ]
 }
