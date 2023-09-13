@@ -9,7 +9,7 @@ export default function PSTEvent() {
       {/* <p className="event-current">CURRENT EVENT</p> */}
       <p className="event-title">Platinum Star Theater : Legend Girls!!</p>
         <p className="event-time">Time Remaining: <Countdown date="2023-06-07T20:59:59.000+09:00" /></p>
-        <div className="event-essentials-pst">
+        <div className="event-essentials">
           <p>🔺Ranking SR: Shizuka</p>
           <p>🔸Point SR: Haruka</p>
           <p>🔹Participating: Yuriko, Serika, Tomoka</p>
