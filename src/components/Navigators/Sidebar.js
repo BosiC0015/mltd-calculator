@@ -19,7 +19,7 @@ export default function Sidebar(props) {
         <MenuItem onClick={() => props.select('TOUR')}>PSTour</MenuItem>
         <MenuItem onClick={() => props.select('TWINSTAGE')}>PSTwinStage</MenuItem>
         <MenuItem onClick={() => props.select('TUNE')}>PSTune</MenuItem>
-        <MenuItem onClick={() => props.select('TALE')}>PSTale</MenuItem>
+        <MenuItem onClick={() => props.select('TALE')}>PSTale / PSTeam</MenuItem>
         <MenuItem onClick={() => props.select('TREASURE')}>PSTreaure</MenuItem>
         <MenuItem onClick={() => props.select('TRUST')}>PSTrust</MenuItem>
         <MenuItem></MenuItem>

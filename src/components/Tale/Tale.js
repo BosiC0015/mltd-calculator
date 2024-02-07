@@ -48,7 +48,7 @@ export default function Tale(props) {
 
   return (
     <div className="main-container">
-      <p className="title">Platinum Star Tale Event Calculator</p>
+      <p className="title">Platinum Star Tale/Team Event Calculator</p>
       <form
         id="pstheater-calc"
         autoComplete="off"
