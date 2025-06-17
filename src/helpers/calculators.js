@@ -5,19 +5,13 @@ export function getDifference (target, current) {
 
 // calculators for PSTheater events
 export function getTheaterEventSongPlays(difference, items) {
-  let result;
-
   if (items === 720) {
-    result = (difference / 2148);
+   return difference / 2148;
   } else if (items === 360) {
-    result = (difference / 1074);
+  return difference / 1074;
   } else if (items === 180) {
-    result = (difference / 537);
+    return difference / 537;
   };
-
-  const ceiledResult = Math.ceil(result);
-
-  return ceiledResult;
 };
 
 export function getTheaterItemsNeeded(difference, theaterPointPerItem) {
