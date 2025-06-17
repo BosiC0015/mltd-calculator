@@ -31,9 +31,9 @@ export default function Tour(props) {
 
   // calculations
   const difference = getDifference(targetPoint, currentPoint);
-  const eventSongPlays = getTourEventSongPlays(difference, itemConsume);
-  const itemsNeeded = getTourItemsNeeded(difference, eventItems);
-  const regularSongPlays = getTourRegularSongTimes(itemsNeeded, progress, stamina);
+  const eventSongPlays = Math.ceil(getTourEventSongPlays(difference, itemConsume));
+  const itemsNeeded = Math.ceil(getTourItemsNeeded(difference, eventItems));
+  const regularSongPlays = Math.ceil(getTourRegularSongTimes(itemsNeeded, progress, stamina));
   
   // set states to default when click on Clear
   const clear = () => {
