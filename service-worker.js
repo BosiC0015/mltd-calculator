@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mltd-calculator/precache-manifest.d9828ccb2c51f0c3c163a55dae2e39bb.js"
+  "/mltd-calculator/precache-manifest.a902da79d6f0445e080e52329210b4c5.js"
 );
 
 self.addEventListener('message', (event) => {
