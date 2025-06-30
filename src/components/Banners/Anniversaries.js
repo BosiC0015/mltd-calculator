@@ -10,7 +10,7 @@ export default function Anniversaries(props) {
 
   return (
     <div className="holiday-banner">
-      <p className="title">Happy MLTD Anniversary!🎉</p>
+      <p className="title">Happy MLTD Anniversary!<span role="img" aria-label="party popper">🎉</span></p>
       <img
         className="banner"
         alt="mltd anniversary banner"

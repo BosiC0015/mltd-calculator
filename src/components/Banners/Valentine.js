@@ -10,7 +10,7 @@ export default function Valentine(props) {
 
   return (
     <div className="holiday-banner">
-      <p className="title">🍫Happy Valentine!🍫</p>
+      <p className="title"><span role="img" aria-label="chocolate bar">🍫</span>Happy Valentine!<span role="img" aria-label="chocolate bar">🍫</span></p>
       <img
         className="banner"
         alt="mltd anniversary banner"

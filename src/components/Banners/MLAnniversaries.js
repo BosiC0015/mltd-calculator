@@ -10,7 +10,7 @@ export default function MLAnniversaries(props) {
 
   return (
     <div className="holiday-banner">
-      <p className="title">Million Live Anniversary is coming!🎉</p>
+      <p className="title">Million Live Anniversary is coming!<span role="img" aria-label="party popper">🎉</span></p>
       <img
         className="banner"
         alt="mltd anniversary banner"
