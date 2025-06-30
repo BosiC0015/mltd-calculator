@@ -14,7 +14,7 @@ export default function Christmas(props) {
       <img
         className="banner"
         alt="mltd anniversary banner"
-        src={christmasImgs[getRandom(3)]}
+        src={christmasImgs[getRandom(6)]}
       />
     </div>
   );

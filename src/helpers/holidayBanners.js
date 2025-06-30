@@ -1,72 +1,105 @@
+import valentine2019 from "../assets/images/banners/valentine/valentineday2019.jpg";
+import valentine2020 from "../assets/images/banners/valentine/valentineday2020.png";
+import valentine2021 from "../assets/images/banners/valentine/valentineday2021.png";
+import valentine2022 from "../assets/images/banners/valentine/valentineday2022.png";
+import valentine2023 from "../assets/images/banners/valentine/valentineday2023.png";
+import valentine2024 from "../assets/images/banners/valentine/valentineday2024.png";
+import valentine2025 from "../assets/images/banners/valentine/valentineday2025.jpg";
+
+import whiteday2019 from "../assets/images/banners/whiteday/whiteday2019.jpg";
+import whiteday2020 from "../assets/images/banners/whiteday/whiteday2020.png";
+import whiteday2021 from "../assets/images/banners/whiteday/whiteday2021.png";
+import whiteday2022 from "../assets/images/banners/whiteday/whiteday2022.png";
+import whiteday2023 from "../assets/images/banners/whiteday/whiteday2023.png";
+import whiteday2024 from "../assets/images/banners/whiteday/whiteday2024.png";
+import whiteday2025 from "../assets/images/banners/whiteday/whiteday2025.png";
+
+import million7th from "../assets/images/banners/ML_anniversary/million7th.png";
+import million8th from "../assets/images/banners/ML_anniversary/million8th.png";
+import million9th from "../assets/images/banners/ML_anniversary/million9th.png";
+import million10th from "../assets/images/banners/ML_anniversary/million10th.png";
+import million11th from "../assets/images/banners/ML_anniversary/million11th.png";
+import million12th from "../assets/images/banners/ML_anniversary/million12th.jpg";
+
+import mltd2nd3d from "../assets/images/banners/anniversary/2nd3d.png";
+import mltd2nd2d from "../assets/images/banners/anniversary/2nd2d.png";
+import mltd2nd1d from "../assets/images/banners/anniversary/2nd1d.png";
+import mltd3rd3d from "../assets/images/banners/anniversary/3rd3d.png";
+import mltd3rd2d from "../assets/images/banners/anniversary/3rd2d.png";
+import mltd3rd1d from "../assets/images/banners/anniversary/3rd1d.png";
+import mltd4th4d from "../assets/images/banners/anniversary/4th4d.png";
+import mltd4th3d from "../assets/images/banners/anniversary/4th3d.png";
+import mltd4th2d from "../assets/images/banners/anniversary/4th2d.png";
+import mltd4th1d from "../assets/images/banners/anniversary/4th1d.png";
+import mltd5th3d from "../assets/images/banners/anniversary/5th3d.png";
+import mltd5th2d from "../assets/images/banners/anniversary/5th2d.png";
+import mltd5th1d from "../assets/images/banners/anniversary/5th1d.png";
+import mltd6th4d from "../assets/images/banners/anniversary/6th4d.png";
+import mltd6th3d from "../assets/images/banners/anniversary/6th3d.png";
+import mltd6th2d from "../assets/images/banners/anniversary/6th2d.png";
+import mltd6th1d from "../assets/images/banners/anniversary/6th1d.png";
+import mltd7th3d from "../assets/images/banners/anniversary/7th3d.png";
+import mltd7th2d from "../assets/images/banners/anniversary/7th2d.png";
+import mltd7th1d from "../assets/images/banners/anniversary/7th1d.png";
+import mltd8th3d from "../assets/images/banners/anniversary/8th3d.png";
+import mltd8th2d from "../assets/images/banners/anniversary/8th2d.png";
+import mltd8th1d from "../assets/images/banners/anniversary/8th1d.png";
+
+import christmas2019 from "../assets/images/banners/christmas/christmas2019.png";
+import christmas2020 from "../assets/images/banners/christmas/christmas2020.png";
+import christmas2021 from "../assets/images/banners/christmas/christmas2021.png";
+import christmas2022 from "../assets/images/banners/christmas/christmas2022.png";
+import christmas2023 from "../assets/images/banners/christmas/christmas2023.png";
+import christmas2024 from "../assets/images/banners/christmas/christmas2024.png";
+
+
 const valentine = {
-  2019: 'https://imas.gamedbs.jp/mlth/image/chara/other/1550122672001_9yrgeiuw.jpg',
-  2020: 'https://imas.gamedbs.jp/mlth/image/chara/other/1592368427001_w5hd6n9b.png',
-  2021: 'https://imas.gamedbs.jp/mlth/image/chara/other/1613229890001_zf8vb06t.png',
-  2022: 'https://imas.gamedbs.jp/mlth/image/chara/other/1644765083001_nrde8bjf.png',
-  2023: 'https://imas.gamedbs.jp/mlth/image/chara/other/1676300479001_tfyghwdu.png',
-  2024: 'https://imas.gamedbs.jp/mlth/image/chara/other/1707853187001_9mih7unc.png',
-  2025: 'https://millionlive-theaterdays.idolmaster-official.jp/assets/img/wallpaper/2025/03/pc/million_theater_wallpaper_valentineday2025.jpg'
+  valentine2019,
+  valentine2020,
+  valentine2021,
+  valentine2022,
+  valentine2023,
+  valentine2024,
+  valentine2025
 };
 
 const mlAnniversaries = {
-  7: 'https://imas.gamedbs.jp/mlth/image/chara/other/1592368439001_a5penhm8.png',
-  8: 'https://imas.gamedbs.jp/mlth/image/chara/other/1623910460002_7l3p0cx8.png',
-  9: 'https://imas.gamedbs.jp/mlth/image/chara/other/1645931101001_i64s29yl.png',
-  10: 'https://imas.gamedbs.jp/mlth/image/chara/other/1677467537001_kcn4qy1b.png',
-  11: '',
-  12: 'https://millionlive-theaterdays.idolmaster-official.jp/assets/img/wallpaper/2025/03/pc/million_theater_wallpaper_million12th.jpg'
+  million7th,
+  million8th,
+  million9th,
+  million10th,
+  million11th,
+  million12th
 };
 
 const whiteDays = {
-  2019: 'https://imas.gamedbs.jp/mlth/image/chara/other/1552539836001_z0vmei6o.jpg',
-  2020: 'https://imas.gamedbs.jp/mlth/image/chara/other/1584141024001_waqzy8u6.png',
-  2021: 'https://imas.gamedbs.jp/mlth/image/chara/other/1623910459001_85hersac.png',
-  2022: 'https://imas.gamedbs.jp/mlth/image/chara/other/1647183840001_7o9ut2pf.png',
-  2023: 'https://imas.gamedbs.jp/mlth/image/chara/other/1678719655001_8kl3c2vr.png',
-  2024: 'https://imas.gamedbs.jp/mlth/image/chara/other/1710376642001_h7l0dz3m.png',
-  2025: 'https://imas.gamedbs.jp/mlth/image/chara/other/1741906011001_cf6d1sm9.png'
+  whiteday2019,
+  whiteday2020,
+  whiteday2021,
+  whiteday2022,
+  whiteday2023,
+  whiteday2024,
+  whiteday2025
 };
 
 const anniversaries = {
-  '2nd3d': 'https://pbs.twimg.com/media/D9UWcPQU8AAd5eA?format=png&name=large',
-  '2nd2d': 'https://pbs.twimg.com/media/D9UWmJbU0AA2YeS?format=png&name=large',
-  '2nd1d': 'https://pbs.twimg.com/media/D-DD-HvUEAAhDfk?format=png&name=large',
-  '3rd3d': 'https://pbs.twimg.com/media/EbSuFAvUwAAQYHN?format=png&name=large',
-  '3rd2d': 'https://pbs.twimg.com/media/EbSuQC9U0AEpNRt?format=png&name=large',
-  '3rd1d': 'https://pbs.twimg.com/media/EbSuYzzU0AAJeq1?format=png&name=large',
-  '4th4d': 'https://imas.gamedbs.jp/mlth/image/chara/other/1624547659001_w651hzbj.png',
-  '4th3d': 'https://imas.gamedbs.jp/mlth/image/chara/other/1624633728001_8nbiue3h.png',
-  '4th2d': 'https://imas.gamedbs.jp/mlth/image/chara/other/1624719688001_widr3fa4.png',
-  '4th1d': 'https://imas.gamedbs.jp/mlth/image/chara/other/1624806534001_14tbj0ih.png',
-  '5th3d': 'https://pbs.twimg.com/media/FV_nLYzVEAEpsqB?format=png&name=large',
-  '5th2d': 'https://pbs.twimg.com/media/FV_ontBVsAAQYkN?format=png&name=large',
-  '5th1d': 'https://pbs.twimg.com/media/FV_0tXAUEAAvUot?format=png&name=large',
-  '6th4d': 'https://pbs.twimg.com/media/FzSPLBiaQAAyuCe?format=png&name=large',
-  '6th3d': 'https://pbs.twimg.com/media/FzSPXOkaAAAp1eJ?format=png&name=large',
-  '6th2d': 'https://pbs.twimg.com/media/FzSPnpMaEAASpMg?format=png&name=large',
-  '6th1d': 'https://pbs.twimg.com/media/FzSQGSQacAAam3Q?format=png&name=large',
-  '7th3d': 'https://pbs.twimg.com/media/GQ5LYGCbkAAYrG7?format=png&name=large',
-  '7th2d': 'https://pbs.twimg.com/media/GQ6GnjKaQAAemMV?format=png&name=large',
-  '7th1d': 'https://pbs.twimg.com/media/GQ6HMaQaQAEdXW3?format=png&name=large'
-};
-
-const imasAnniversaries = {
-  '15th2d': 'https://imas.gamedbs.jp/mlth/image/chara/other/1595516763001_z87yisr1.png',
-  '15th': 'https://imas.gamedbs.jp/mlth/image/chara/other/1595691318001_6h4jgx7a.png'
-};
-
-const kanshasai = {
-  '2018': '	https://imas.gamedbs.jp/mlth/image/chara/other/1555568379001_ycwuol9x.png',
-  '2019~2020': 'https://imas.gamedbs.jp/mlth/image/chara/other/1585290381001_oept6yg0.png'
+  mltd2nd3d, mltd2nd2d, mltd2nd1d, 
+  mltd3rd3d, mltd3rd2d, mltd3rd1d, 
+  mltd4th4d, mltd4th3d, mltd4th2d, mltd4th1d, 
+  mltd5th3d, mltd5th2d, mltd5th1d, 
+  mltd6th4d, mltd6th3d, mltd6th2d, mltd6th1d, 
+  mltd7th3d, mltd7th2d, mltd7th1d, 
+  mltd8th3d, mltd8th2d, mltd8th1d
 };
 
 const christmas = {
-  2019: 'https://imas.gamedbs.jp/mlth/image/chara/other/1584142196001_m0ybnj19.png',
-  2020: 'https://imas.gamedbs.jp/mlth/image/chara/other/1608822227001_0ykoibhf.png',
-  2022: 'https://imas.gamedbs.jp/mlth/image/chara/other/1671948599001_inrm1ecu.png',
-  2023: '',
-  2024: 'https://millionlive-theaterdays.idolmaster-official.jp/assets/img/wallpaper/2025/03/pc/million_theater_wallpaper_xmas2024.jpg'
+  christmas2019,
+  christmas2020,
+  christmas2021,
+  christmas2022,
+  christmas2023,
+  christmas2024
 };
 
 
-module.exports = { valentine, mlAnniversaries, whiteDays, anniversaries, imasAnniversaries, kanshasai, christmas }
+export { valentine, mlAnniversaries, whiteDays, anniversaries, christmas }

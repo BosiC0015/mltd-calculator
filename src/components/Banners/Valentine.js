@@ -14,7 +14,7 @@ export default function Valentine(props) {
       <img
         className="banner"
         alt="mltd anniversary banner"
-        src={valentineImgs[getRandom(5)]}
+        src={valentineImgs[getRandom(7)]}
       />
     </div>
   );

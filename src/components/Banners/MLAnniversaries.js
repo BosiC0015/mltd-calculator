@@ -14,7 +14,7 @@ export default function MLAnniversaries(props) {
       <img
         className="banner"
         alt="mltd anniversary banner"
-        src={mlAnniversariesImgs[getRandom(4)]}
+        src={mlAnniversariesImgs[getRandom(6)]}
       />
     </div>
   );

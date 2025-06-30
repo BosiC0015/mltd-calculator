@@ -4,9 +4,8 @@ import { anniversaries } from "../../helpers/holidayBanners";
 import "./banners.scss";
 
 
-export default function Anniversaries(props) {
+export default function Anniversaries() {
   const anniversariesImgs = Object.values(anniversaries);
-
 
   return (
     <div className="holiday-banner">
@@ -14,7 +13,7 @@ export default function Anniversaries(props) {
       <img
         className="banner"
         alt="mltd anniversary banner"
-        src={anniversariesImgs[getRandom(17)]}
+        src={anniversariesImgs[getRandom(23)]}
       />
     </div>
   );
