@@ -123,6 +123,11 @@ p {
   font-weight: 300;
 }
 
+.countdown-display {
+  display: flex;
+  flex-direction: row;
+}
+
 @media only screen and (min-width: 720px) {
   .form-input{
     display: grid;
