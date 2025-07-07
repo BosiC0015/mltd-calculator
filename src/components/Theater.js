@@ -4,6 +4,7 @@ import ItemsQty from "./ItemsQty";
 import Results from "./Results/Result";
 import TheaterRegularPlays from "./Results/TheaterRegularPlays";
 import "./styles.scss";
+import FormInput from "./FormInput";
 
 
 export default function Theater(props) {
@@ -29,6 +30,10 @@ export default function Theater(props) {
     setLoadResults(false);
   };
 
+  const onChangeCurrentPoint = (event) => setCurrentPoint(event.target.value);
+  const onChangeTargetPoint = (event) => setTargetPoint(event.target.value);
+  const onChangeEventItems = (event) => setEventItems(event.target.value);
+
 
   return (
     <div className="main-container">
@@ -39,7 +44,7 @@ export default function Theater(props) {
         onKeyDown={e => e.key === 'Enter' && e.preventDefault()}
         onSubmit={e => e.preventDefault()}
       >
-        <div className="form-input">
+        {/* <div className="form-input">
             <label className="form-input__label">Current Point:</label>
             <input
               className="form-input__input"
@@ -47,8 +52,9 @@ export default function Theater(props) {
               value={currentPoint}
               onChange={(event) => setCurrentPoint(event.target.value)}
             />
-        </div>
-        <div className="form-input">
+        </div> */}
+        <FormInput label="Current Point: " value={currentPoint} change={onChangeCurrentPoint} />
+        {/* <div className="form-input">
           <label className="form-input__label">Target Point:</label>
           <input
             className="form-input__input"
@@ -56,8 +62,9 @@ export default function Theater(props) {
             value={targetPoint}
             onChange={(event) => setTargetPoint(event.target.value)}
           />
-        </div>
-        <div className="form-input">
+        </div> */}
+        <FormInput label="Target Point: " value={targetPoint} change={onChangeTargetPoint} />
+        {/* <div className="form-input">
           <label className="form-input__label">Event Items:</label>
           <input
             className="form-input__input"
@@ -65,7 +72,8 @@ export default function Theater(props) {
             value={eventItems}
             onChange={(event) => setEventItems(event.target.value)}
           />
-        </div>
+        </div> */}
+        <FormInput label="Event Items: " value={eventItems} change={onChangeEventItems} />
         <div className="event-item-qty">
           <label>How many event items do you use:</label>
           <div className="event-item-qty-buttons">

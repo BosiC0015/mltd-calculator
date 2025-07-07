@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./styles.scss";
 
 
 export default function CountdownContainer(props) {
@@ -12,11 +13,11 @@ export default function CountdownContainer(props) {
         const eventTime = new Date(endTime).getTime();
         let remainingTime = eventTime - currentTime;
   
-        if (remainingTime <= 0) {
-          remainingTime = 0;
-          clearInterval(countdownInterval);
-          alert("countdown complete");
-        }
+        // if (remainingTime <= 0) {
+        //   remainingTime = 0;
+        //   clearInterval(countdownInterval);
+        //   alert("countdown complete");
+        // }
   
         setTimeRemaining(remainingTime);
       }, 1000);
@@ -25,6 +26,13 @@ export default function CountdownContainer(props) {
     }
   }, [endTime, timeRemaining]);
 
+  const toggleClass = () => {
+    if (timeRemaining <= 86400) {
+      return "countdown-display alert";
+    }
+    return "countdown-display default";
+  }
+
   const formatTime = (time) => {
     const seconds = Math.floor((time / 1000) % 60);
     const minutes = Math.floor((time / (1000 * 60)) % 60);
@@ -32,7 +40,7 @@ export default function CountdownContainer(props) {
     const days = Math.floor(time / (1000 * 60 * 60 * 24));
 
     return (
-      <div className="countdown-display">
+      <div className={toggleClass()}>
         <div className="countdown-value">
           {days.toString().padStart(2, "0")} <span>days</span>
         </div>
