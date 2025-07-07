@@ -2,17 +2,20 @@
 
 
 .App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   font-family: 'League Spartan', sans-serif;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 769px) {
   .App {
     display: flex;
     flex-direction: row;
   }
 
   .main-container {
-    width: 70vw;
+    width: 90vw;
   }
 }
