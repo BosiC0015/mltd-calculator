@@ -1,6 +1,6 @@
 import React from "react";
 import "../Banners/banners.scss";
-import CountdownContainer from "../Coutdown";
+import CountdownContainer from "../Countdown";
 
 
 export default function PSTEvent() {

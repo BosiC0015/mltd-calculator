@@ -1,7 +1,7 @@
 import React from "react";
 // import Countdown from "react-countdown";
 import "../Banners/banners.scss";
-import CountdownContainer from "../Coutdown";
+import CountdownContainer from "../Countdown";
 
 
 export default function TalkParty() {
