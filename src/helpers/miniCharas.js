@@ -1,56 +1,65 @@
+import Haruka from "../assets/images/chibis/Haruka.png";
+import Chihaya from "../assets/images/chibis/Chihaya.png";
+import Miki from "../assets/images/chibis/Miki.png";
+import Yukiho from "../assets/images/chibis/Yukiho.png";
+import Yayoi from "../assets/images/chibis/Yayoi.png";
+import Makoto from "../assets/images/chibis/Makoto.png";
+import Iori from "../assets/images/chibis/Iori.png";
+import Takane from "../assets/images/chibis/Takane.png";
+import Ritsuko from "../assets/images/chibis/Ritsuko.png";
+import Azusa from "../assets/images/chibis/Azusa.png";
+import Ami from "../assets/images/chibis/Ami.png";
+import Mami from "../assets/images/chibis/Mami.png";
+import Hibiki from "../assets/images/chibis/Hibiki.png";
+import Mirai from "../assets/images/chibis/Mirai.png";
+import Shizuka from "../assets/images/chibis/Shizuka.png";
+import Tsubasa from "../assets/images/chibis/Tsubasa.png";
+import Kotoha from "../assets/images/chibis/Kotoha.png";
+import Elena from "../assets/images/chibis/Elena.png";
+import Minako from "../assets/images/chibis/Minako.png";
+import Megumi from "../assets/images/chibis/Megumi.png";
+import Matsuri from "../assets/images/chibis/Matsuri.png";
+import Serika from "../assets/images/chibis/Serika.png";
+import Akane from "../assets/images/chibis/Akane.png";
+import Anna from "../assets/images/chibis/Anna.png";
+import ROCO from "../assets/images/chibis/ROCO.png";
+import Yuriko from "../assets/images/chibis/Yuriko.png";
+import Sayoko from "../assets/images/chibis/Sayoko.png";
+import Arisa from "../assets/images/chibis/Arisa.png";
+import Umi from "../assets/images/chibis/Umi.png";
+import Iku from "../assets/images/chibis/Iku.png";
+import Tomoka from "../assets/images/chibis/Tomoka.png";
+import Emily from "../assets/images/chibis/Emily.png";
+import Shiho from "../assets/images/chibis/Shiho.png";
+import Ayumu from "../assets/images/chibis/Ayumu.png";
+import Hinata from "../assets/images/chibis/Hinata.png";
+import Kana from "../assets/images/chibis/Kana.png";
+import Nao from "../assets/images/chibis/Nao.png";
+import Chizuru from "../assets/images/chibis/Chizuru.png";
+import Konomi from "../assets/images/chibis/Konomi.png";
+import Tamaki from "../assets/images/chibis/Tamaki.png";
+import Fuka from "../assets/images/chibis/Fuka.png";
+import Miya from "../assets/images/chibis/Miya.png";
+import Noriko from "../assets/images/chibis/Noriko.png";
+import Mizuki from "../assets/images/chibis/Mizuki.png";
+import Karen from "../assets/images/chibis/Karen.png";
+import Rio from "../assets/images/chibis/Rio.png";
+import Subaru from "../assets/images/chibis/Subaru.png";
+import Reika from "../assets/images/chibis/Reika.png";
+import Momoko from "../assets/images/chibis/Momoko.png";
+import Julia from "../assets/images/chibis/Julia.png";
+import Tsumugi from "../assets/images/chibis/Tsumugi.png";
+import Kaori from "../assets/images/chibis/Kaori.png";
+import Kotori from "../assets/images/chibis/Kotori.png";
+import Misaki from "../assets/images/chibis/Misaki.png";
+
+
 const miniCharas = {
-  'Haruka': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315296001_sha159vu.png',
-  'Chihaya': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315296002_jbsa12ny.png',
-  'Miki': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315296003_9tzfjriq.png',
-  'Yukiho': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315296004_okvfjmra.png',
-  'Yayoi': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315296005_q4ntpj8e.png',
-  'Makoto': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315297006_2sk6c3ui.png',
-  'Iori': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315297007_2cfplemb.png',
-  'Takane': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315297008_hq7gilez.png',
-  'Ritsuko': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315297009_jr476xy3.png',
-  'Azusa': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315297010_05jwb4n2.png',
-  'Ami': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315297011_x0hvnmc6.png',
-  'Mami': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315297012_i95hfyb2.png',
-  'Hibiki': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315297013_bxuy0cld.png',
-  'Mirai': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315298014_9x2kjrqw.png',
-  'Shizuka': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315298015_p27f8g0r.png',
-  'Tsubasa': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315298016_38xsavdr.png',
-  'Kotoha': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315298017_ntc8r2fk.png',
-  'Elena': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315298018_8nqpk6xt.png',
-  'Minako': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315298019_0gvliukq.png',
-  'Megumi': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315298020_8mxoq6ba.png',
-  'Matsuri': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315299021_p8vxrwma.png',
-  'Serika': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315299022_5blxrkd9.png',
-  'Akane': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315299023_3cj01s7z.png',
-  'Anna': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315299023_3cj01s7z.png',
-  'Roco': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315299025_gdj7bztp.png',
-  'Yuriko': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315299026_764ubzi9.png',
-  'Sayoko': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315299027_zep5gcq4.png',
-  'Arisa': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315299028_5p7c10nu.png',
-  'Umi': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315300029_s68g0o7c.png',
-  'Iku': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315300030_2c5g68r9.png',
-  'Tomoka': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315300031_2v6u5dby.png',
-  'Emily': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315300032_mbdyfvzk.png',
-  'Shiho': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315300033_rumcy920.png',
-  'Ayumu': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315300034_vf6yg5cm.png',
-  'Hinata': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315300035_zkd7y9l1.png',
-  'Kana': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315301036_n7w6v9ju.png',
-  'Nao': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315301037_6vgs79er.png',
-  'Chizuru': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315301038_74pbrmgh.png',
-  'Konomi': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315301039_ry6sf8jq.png',
-  'Tamaki': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315301040_ilvo458q.png',
-  'Fuuka': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315301041_e8ntvi9r.png',
-  'Miya': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315301042_li42fz9b.png',
-  'Noriko': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315302043_hiaxts2r.png',
-  'Mizuki': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315302044_4fybz987.png',
-  'Karen': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315302045_ij2l79pr.png',
-  'Rio': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315302046_39mvisrq.png',
-  'Subaru': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315302047_p9h2qzfx.png',
-  'Reika': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315302048_daxjoqw2.png',
-  'Momoko': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315302049_rgeubqm4.png',
-  'Julia': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315302050_lq9zj8wa.png',
-  'Tsumugi': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315303051_6tv7y0sj.png',
-  'Kaori': 'https://imas.gamedbs.jp/mlth/image/chara/loading/1721315303052_a0wr5bjp.png'
+  Haruka, Chihaya, Miki, Yukiho, Yayoi, Makoto, Iori, Takane, Ritsuko, Azusa, Ami, Mami, Hibiki,
+  Mirai, Kotoha, Minako, Matsuri, Yuriko, Sayoko, Arisa, Umi, Iku, Emily, Kana, Nao, Noriko,
+  Shizuka, Megumi, ROCO, Tomoka, Shiho, Ayumu, Chizuru, Mizuki, Rio, Subaru, Momoko, Julia, Tsumugi,
+  Tsubasa, Elena, Serika, Akane, Anna, Hinata, Konomi, Tamaki, Fuka, Miya, Karen, Reika, Kaori,
+  Kotori, Misaki
 };
 
-module.exports = { miniCharas }
+export {miniCharas}

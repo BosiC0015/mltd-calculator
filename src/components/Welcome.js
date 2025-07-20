@@ -49,9 +49,9 @@ export default function Welcome() {
     <div className="main-container">
       {/* Welcome Page */}
       <div className="welcome">
-        <img className="welcome-mini" alt="random mini chara" src={miniCharaImgs[getRandom(52)]} />
+        <img className="welcome-mini" alt="random mini chara" src={miniCharaImgs[getRandom(54)]} />
         <p className="title">Welcome to MLTD Calculator</p>
-        <img className="welcome-mini" alt="random mini chara" src={miniCharaImgs[getRandom(52)]} />
+        <img className="welcome-mini" alt="random mini chara" src={miniCharaImgs[getRandom(54)]} />
       </div>
 
       {/* current event */}
