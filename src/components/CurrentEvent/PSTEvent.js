@@ -9,9 +9,9 @@ export default function PSTEvent() {
   return (
     <div className="event">
       <p className="event-current">CURRENT EVENT</p>
-      <p className="event-title">Platinum Star Tour BINGO : SHIMMER</p>
+      <p className="event-title">Platinum Star Theater : piece of cake</p>
       <p className="event-time">Time Remaining: </p>
-      <CountdownContainer endTime="2025-08-25T20:59:59.000+09:00" />
+      <CountdownContainer endTime="2025-09-08T20:59:59.000+09:00" />
       {/* <div className="event-essentials"> */}
         {/* <p>🔺Ranking SR: Mami</p> */}
         {/* <p>🔸Point SR: Ayumu</p> */}
@@ -20,7 +20,7 @@ export default function PSTEvent() {
       <img 
         className="banner" 
         alt="event" 
-        src="https://pbs.twimg.com/media/GxpeZtcawAMcVLE?format=png&name=large" 
+        src="https://pbs.twimg.com/media/GzQw3oSawAAbyG0?format=png&name=large" 
       />
       {/* <CardShowcase 
         cardLink="https://cmsapi-frontend.idolmaster-official.jp/sitern/api/idolmaster/Image/get?path=/idolmaster/jp/article/1001/2025/07/XXRIJv6lhURh3QkgbftSxPx9np1Ypqzk.jpeg"
