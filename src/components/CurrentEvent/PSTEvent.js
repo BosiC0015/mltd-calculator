@@ -20,7 +20,7 @@ export default function PSTEvent() {
       <img 
         className="banner" 
         alt="event" 
-        src="https://pbs.twimg.com/media/GzQw3oSawAAbyG0?format=png&name=large" 
+        src="https://pbs.twimg.com/media/G1_G2K_aoAAtJUZ?format=png&name=large" 
       />
       {/* <CardShowcase 
         cardLink="https://cmsapi-frontend.idolmaster-official.jp/sitern/api/idolmaster/Image/get?path=/idolmaster/jp/article/1001/2025/07/XXRIJv6lhURh3QkgbftSxPx9np1Ypqzk.jpeg"
