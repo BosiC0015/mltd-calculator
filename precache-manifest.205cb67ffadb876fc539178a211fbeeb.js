@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "691584e21c48a2f8272ac8a534503b3d",
+    "revision": "8bd1560f7a362ddbd4204d29bb3078f3",
     "url": "/mltd-calculator/index.html"
   },
   {
-    "revision": "2ce8a0299e523ecf1f49",
+    "revision": "1b880d05b4b930e50b30",
     "url": "/mltd-calculator/static/css/main.419b42c7.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mltd-calculator/static/js/3.e6bd6039.chunk.js"
   },
   {
-    "revision": "2ce8a0299e523ecf1f49",
-    "url": "/mltd-calculator/static/js/main.4e909cac.chunk.js"
+    "revision": "1b880d05b4b930e50b30",
+    "url": "/mltd-calculator/static/js/main.dac38ea8.chunk.js"
   },
   {
     "revision": "26a4ebdf59c719262ffa",
