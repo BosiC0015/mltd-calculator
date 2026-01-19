@@ -8,10 +8,10 @@ import CountdownContainer from "../Countdown";
 export default function PSTEvent() {
   return (
     <div className="event">
-      <p className="event-current">CURRENT EVENT</p>
-      <p className="event-title"><b>プラチナスターテール<br></br>～聖ミリオン女学園 花言葉を胸に～</b></p>
+      {/* <p className="event-current">CURRENT EVENT</p> */}
+      <p className="event-title"><b>プラチナスターツアービンゴ<br></br>～Especially Angel♡～</b></p>
       <p className="event-time">Time Remaining: </p>
-      <CountdownContainer endTime="2026-01-09T20:59:59.000+09:00" />
+      <CountdownContainer endTime="2026-01-25T20:59:59.000+09:00" />
       {/* <div className="event-essentials"> */}
         {/* <p>🔺Ranking SR: Mami</p> */}
         {/* <p>🔸Point SR: Ayumu</p> */}
@@ -20,8 +20,7 @@ export default function PSTEvent() {
       <img 
         className="banner" 
         alt="event" 
-        // src="https://pbs.twimg.com/media/G3WsXf1a8AAFHce?format=png&name=large" 
-        src="https://cmsapi-frontend.idolmaster-official.jp/sitern/api/idolmaster/Image/get?path=/idolmaster/jp/article/1001/2025/12/HF15UVcrWAPFYKEgUmRODXgBb2NcoC2A.jpeg"
+        src="https://cmsapi-frontend.idolmaster-official.jp/sitern/api/idolmaster/Image/get?path=/idolmaster/jp/article/1001/2026/01/CpfG27x8k7rKD4RDi88vjdF78uIUnG2z.jpeg"
       />
       {/* <CardShowcase 
         cardLink="https://cmsapi-frontend.idolmaster-official.jp/sitern/api/idolmaster/Image/get?path=/idolmaster/jp/article/1001/2025/07/XXRIJv6lhURh3QkgbftSxPx9np1Ypqzk.jpeg"
