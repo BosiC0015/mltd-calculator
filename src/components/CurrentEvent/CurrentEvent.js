@@ -13,7 +13,7 @@ export default function CurrentEvent() {
   const TALKPARTY = 'TALKPARTY';
   const ANNIV = 'ANNIV';
 
-  const { mode } = useVisualMode(TALKPARTY);
+  const { mode } = useVisualMode(PST);
 
   return (
     <div>
