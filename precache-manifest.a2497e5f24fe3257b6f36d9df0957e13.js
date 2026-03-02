@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e5f7b5daf331c323899dbacd79c6d2f9",
+    "revision": "182be7fb3782421d57db2f9504dd137d",
     "url": "/mltd-calculator/index.html"
   },
   {
-    "revision": "81dcf85c0171dd766994",
+    "revision": "accd8dd4e3055ae1ac91",
     "url": "/mltd-calculator/static/css/main.419b42c7.chunk.css"
   },
   {
-    "revision": "5ee2e7aa1810215f974f",
-    "url": "/mltd-calculator/static/js/2.1e0ad2c6.chunk.js"
+    "revision": "dffa8d856ce7b4329717",
+    "url": "/mltd-calculator/static/js/2.14bd4c91.chunk.js"
   },
   {
     "revision": "bb12d715cccfa409209739a66ee0b36c",
-    "url": "/mltd-calculator/static/js/2.1e0ad2c6.chunk.js.LICENSE.txt"
+    "url": "/mltd-calculator/static/js/2.14bd4c91.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fce37a0957649df4caf6",
-    "url": "/mltd-calculator/static/js/3.e6bd6039.chunk.js"
+    "revision": "0145dbd3900051d0c9a3",
+    "url": "/mltd-calculator/static/js/3.d0c24882.chunk.js"
   },
   {
-    "revision": "81dcf85c0171dd766994",
-    "url": "/mltd-calculator/static/js/main.19d38a5c.chunk.js"
+    "revision": "accd8dd4e3055ae1ac91",
+    "url": "/mltd-calculator/static/js/main.87d1abc1.chunk.js"
   },
   {
-    "revision": "26a4ebdf59c719262ffa",
-    "url": "/mltd-calculator/static/js/runtime-main.2081d751.js"
+    "revision": "0dd69b9c17862acd1e92",
+    "url": "/mltd-calculator/static/js/runtime-main.e4294812.js"
   },
   {
     "revision": "e825c3c8b26fc0637670bf77240e7e8f",
@@ -370,6 +370,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2047d7387b27317340c273a5f79912d7",
     "url": "/mltd-calculator/static/media/million12th.2047d738.jpg"
+  },
+  {
+    "revision": "bea95024b55fe1cfa1483ed504ec4b0f",
+    "url": "/mltd-calculator/static/media/million13th.bea95024.jpeg"
   },
   {
     "revision": "c65a25a84083fdd1f2898819b3d43610",
