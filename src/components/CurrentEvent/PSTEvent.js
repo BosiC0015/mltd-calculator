@@ -9,9 +9,9 @@ export default function PSTEvent() {
   return (
     <div className="event">
       {/* <p className="event-current">CURRENT EVENT</p> */}
-      <p className="event-title"><b>プラチナスターツアービンゴ<br></br>～Fairy Daysは絶え間ない～</b></p>
+      <p className="event-title"><b>プラチナスターシアター<br></br>～カワラナイモノ～</b></p>
       <p className="event-time">Time Remaining: </p>
-      <CountdownContainer endTime="2026-02-23T20:59:59.000+09:00" />
+      <CountdownContainer endTime="2026-03-09T20:59:59.000+09:00" />
       {/* <div className="event-essentials"> */}
         {/* <p>🔺Ranking SR: Mami</p> */}
         {/* <p>🔸Point SR: Ayumu</p> */}
@@ -20,7 +20,7 @@ export default function PSTEvent() {
       <img 
         className="banner" 
         alt="event" 
-        src="https://cmsapi-frontend.idolmaster-official.jp/sitern/api/idolmaster/Image/get?path=/idolmaster/jp/article/1001/2026/02/u069QtJ0lRw2HAWeG6Zlr4rkexVN0wsi.jpeg"
+        src="https://cmsapi-frontend.idolmaster-official.jp/sitern/api/idolmaster/Image/get?path=/idolmaster/jp/article/1001/2026/02/t4IxCMhjWBNFx2S4UquuVf6vOCbycJDp.jpeg"
       />
       {/* <CardShowcase 
         cardLink="https://cmsapi-frontend.idolmaster-official.jp/sitern/api/idolmaster/Image/get?path=/idolmaster/jp/article/1001/2025/07/XXRIJv6lhURh3QkgbftSxPx9np1Ypqzk.jpeg"
