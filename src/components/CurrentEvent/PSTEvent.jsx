@@ -2,7 +2,6 @@ import React from "react";
 import "../Banners/banners.scss";
 import "./event.scss";
 import CountdownContainer from "../Countdown";
-// import CardShowcase from "../Card/CardShowcase";
 
 
 export default function PSTEvent() {
@@ -22,10 +21,6 @@ export default function PSTEvent() {
         alt="event" 
         src="https://cmsapi-frontend.idolmaster-official.jp/sitern/api/idolmaster/Image/get?path=/idolmaster/jp/article/1001/2026/02/t4IxCMhjWBNFx2S4UquuVf6vOCbycJDp.jpeg"
       />
-      {/* <CardShowcase 
-        cardLink="https://cmsapi-frontend.idolmaster-official.jp/sitern/api/idolmaster/Image/get?path=/idolmaster/jp/article/1001/2025/07/XXRIJv6lhURh3QkgbftSxPx9np1Ypqzk.jpeg"
-        cardLinkPlus="https://cmsapi-frontend.idolmaster-official.jp/sitern/api/idolmaster/Image/get?path=/idolmaster/jp/article/1001/2025/07/XJvYaQ4G1QHF9hMBM4beDfhCFOYHFSvH.jpeg"
-       /> */}
     </div>
   );
 };
