@@ -1,3 +1,10 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,6 +21,7 @@ code {
 
 :root {
   /* 1. 定义原始颜色 (MLTD Yellow) */
+  /* #FFC20B */
   --ml-yellow: 255, 194, 11; 
   
   /* 2. 定义功能性变量 */
@@ -22,4 +30,16 @@ code {
   --bg-soft: rgba(var(--ml-yellow), 0.1);  /* 10% 透明度，适合做背景 */
   --text-main: #333333;
   --transition-main: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+
+  --shade-200: #D5A209;
+  --shade-300: #AA8107;
+  --shade-400: #806106;
+  --shade-500: #554104;
+  --shade-600: #2B2002;
+
+  --highlight-200: #FFCC34;
+  --highlight-300: #FFD65C;
+  --highlight-400: #FFE185;
+  --highlight-500: #FFEBAE;
+  --highlight-600: #FFF5D6;
 }
