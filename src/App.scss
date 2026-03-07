@@ -1,15 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
-
-
 .App {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  font-family: 'League Spartan', sans-serif;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   .App {
     display: flex;
     flex-direction: row;

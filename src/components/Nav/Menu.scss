@@ -1,0 +1,129 @@
+.navBtn {
+  position: fixed;
+  top: 36px;
+  right: 40px;
+  z-index: 10;
+}
+
+#headerNav {
+  background-color: var(--primary-color);
+  position: fixed;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 80px;
+  transform: translateX(100%);
+  transition: transform 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+  &.show {
+    transform: translateX(0);
+  }
+
+  ul {
+    padding: 0;
+    margin: 10px;
+  }
+}
+
+.expand {
+  width: 40px; 
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+  span {
+    display: block;
+    width: 100%;
+    height: 1.2px;
+    background-color: #000;
+    border-radius: 2px;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+.is-active span:nth-child(1) {
+  transform: translateY(4.5px) rotate(405deg);
+}
+.is-active span:nth-child(2) {
+  transform: translateY(-4.5px) rotate(315deg);
+}
+
+.menu-item {
+  position: relative;
+  list-style: none;
+  padding: 1.2rem 2rem;
+  overflow: hidden;
+
+  .item-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transform: translateX(0);
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    
+    .label-text {
+      font-weight: 300;
+      font-size: 1rem;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  #headerNav {
+    ul {
+      margin: 20px;
+    }
+  }
+  .menu-item {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    
+    .item-link {
+      display: flex;
+      align-items: center;
+      padding-left: 35%;
+      gap: 0.5rem;
+      transform: translateX(-2.5rem);
+      transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+      
+      .label-text {
+        font-weight: 300;
+        font-size: 1.75rem;
+        letter-spacing: 1.5px;   
+      }
+    }
+    
+    .arrow {
+      display: flex;
+      align-items: center;
+      opacity: 0; // 初始透明
+      transition: opacity 0.3s ease;
+    }
+    
+    &:hover {
+      .arrow{
+        opacity: 1;
+      }
+      .item-link {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+
+.show {
+  display: block;
+}
+
+// .hide {
+//   display: none;
+// }

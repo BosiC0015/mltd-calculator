@@ -2,6 +2,7 @@ import React from "react";
 import "../Banners/banners.scss";
 import "./event.scss";
 import CountdownContainer from "../Countdown";
+import currentEventBanner from "../../assets/images/event_banner/current.jpeg"
 
 
 export default function PSTEvent() {
@@ -19,7 +20,7 @@ export default function PSTEvent() {
       <img 
         className="banner" 
         alt="event" 
-        src="https://cmsapi-frontend.idolmaster-official.jp/sitern/api/idolmaster/Image/get?path=/idolmaster/jp/article/1001/2026/02/t4IxCMhjWBNFx2S4UquuVf6vOCbycJDp.jpeg"
+        src={currentEventBanner}
       />
     </div>
   );
