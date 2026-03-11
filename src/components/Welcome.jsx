@@ -46,23 +46,26 @@ export default function Welcome() {
   
   
   return (
-    <div className="main-container">
+    <main className="main-container">
       {/* Welcome Page */}
-      <div className="welcome">
-        <img className="welcome-mini" alt="random mini chara" src={miniCharaImgs[getRandom(54)]} />
-        <p className="title">Welcome to MLTD Calculator</p>
-        <img className="welcome-mini" alt="random mini chara" src={miniCharaImgs[getRandom(54)]} />
+      <h1 id="title">
+        <img className="welcome-chibi" alt="random chibi chara" src={miniCharaImgs[getRandom(54)]} />
+        <span className="title">MLTD Calculator</span>
+        <img className="welcome-chibi" alt="random chibi chara" src={miniCharaImgs[getRandom(54)]} />
+      </h1>
+
+      <div id="bg">
+        {/* Holiday Banners */}
+        {/* {mode === ANNIVERSARY && <Anniversaries />} */}
+        {/* {mode === VALENTINE && <Valentine />} */}
+        {/* {mode === WHITEDAY && <WhiteDays />} */}
+        {/* {mode === MLANNIVERSARY && <MLAnniversaries />} */}
+        {/* {mode === CHRISTMAS && <Christmas />} */}
+        <div className="overlay"></div>
+
+        {/* current event */}
+        <CurrentEvent />
       </div>
-
-      {/* current event */}
-      <CurrentEvent />
-
-      {/* Holiday Banners */}
-      {mode === ANNIVERSARY && <Anniversaries />}
-      {mode === VALENTINE && <Valentine />}
-      {mode === WHITEDAY && <WhiteDays />}
-      {mode === MLANNIVERSARY && <MLAnniversaries />}
-      {mode === CHRISTMAS && <Christmas />}
-    </div>
+    </main>
   );
 };

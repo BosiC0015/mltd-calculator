@@ -1,28 +1,42 @@
 .main-container {
-  padding-top: 90px;
-  padding-bottom: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
+  // padding: 90px 5% 2% 5%;
+  margin: 15px;
 }
 
-.welcome {
+#bg {
+  height: calc(100dvh - 15px);
+  width: calc(100dvw - 30px);
+  background-color: var(--highlight-600);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#title {
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+  width: calc(100dvw - 30px);
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-
-  &-mini {
-    width: 20%;
-    height: auto;
+  justify-content: center;
+  // background-color: #fff5d6dd;
+  
+  .title {
+    margin: 1% 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
   }
 }
 
-.title {
-  margin: 1% 0;
-  font-size: 1.75rem;
-  font-weight: 600;
-  text-align: center;
+.welcome-chibi {
+  width: 20%;
+  height: auto;
 }
+
 
 form {
   margin: 5% 0;
@@ -147,7 +161,11 @@ p {
 }
 
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
+  #bg {
+    min-height: 245px;
+  }
+
   .form-input{
     display: grid;
     grid-template-columns: 50% 50%;
