@@ -1,3 +1,17 @@
+.holiday-banner {
+  position: absolute;
+  top: 15px;
+  width: calc(100dvw - 30px);
+}
+
+.overlay {
+  position: absolute;
+  top: 15px;
+  width: calc(100dvw - 30px);
+  height: 245px;
+  background-color: color-mix(in srgb, var(--highlight-600), transparent 60%);
+}
+
 img.banner {
   width: 100%;
 }

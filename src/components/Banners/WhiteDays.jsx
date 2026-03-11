@@ -10,7 +10,7 @@ export default function WhiteDays(props) {
 
   return (
     <div className="holiday-banner">
-      <p className="title">Happy White Days!</p>
+      {/* <p className="title">Happy White Days!</p> */}
       <img
         className="banner"
         alt="mltd white days banner"
