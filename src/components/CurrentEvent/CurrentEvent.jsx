@@ -13,10 +13,10 @@ export default function CurrentEvent() {
   const TALKPARTY = 'TALKPARTY';
   const ANNIV = 'ANNIV';
 
-  const { mode } = useVisualMode(PST);
+  const { mode } = useVisualMode(MILLICOLLE);
 
   return (
-    <div>
+    <div className="current-event">
       {mode === PST && <PSTEvent />}
       {mode === MILLICOLLE && <MilliColle />}
       {mode === TALKPARTY && <TalkParty />}
