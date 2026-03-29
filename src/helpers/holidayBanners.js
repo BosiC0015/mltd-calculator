@@ -20,7 +20,7 @@ import million9th from "../assets/images/banners/ML_anniversary/million9th.png";
 import million10th from "../assets/images/banners/ML_anniversary/million10th.png";
 import million11th from "../assets/images/banners/ML_anniversary/million11th.png";
 import million12th from "../assets/images/banners/ML_anniversary/million12th.jpg";
-import million13th from "../assets/images/banners/ML_anniversary/million13th.jpeg"
+import million13th from "../assets/images/banners/ML_anniversary/million13th.jpg"
 
 import mltd2nd3d from "../assets/images/banners/anniversary/2nd3d.png";
 import mltd2nd2d from "../assets/images/banners/anniversary/2nd2d.png";
