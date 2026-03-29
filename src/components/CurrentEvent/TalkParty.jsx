@@ -1,4 +1,5 @@
 import React from "react";
+import currentEventBanner from "../../assets/images/event_banner/current.jpeg"
 import CountdownContainer from "../Countdown";
 import "../Banners/banners.scss";
 import "./event.scss";
@@ -8,10 +9,10 @@ export default function TalkParty() {
   return (
     <div className="event">
       {/* <p>Current Event: Million Live TalkParty</p> */}
-      <p className="event-title"><b>THEATER TALK PARTY☆<br></br>～ユニットオフショット Vol.59～</b></p>
+      <p className="event-title"><b>THEATER TALK PARTY☆<br></br>～ユニットオフショット Vol.61～</b></p>
       <p>Time Remaining: </p>
-      <CountdownContainer endTime="2026-01-30T23:59:59.000+09:00" />
-      <img className="banner" src="https://pbs.twimg.com/media/G_OsNLrboAAjldl?format=jpg&name=large" alt="talk-party-event" />
+      <CountdownContainer endTime="2026-03-31T23:59:59.000+09:00" />
+      <img className="banner" alt="THEATER TALK PARTY Event" src={currentEventBanner} />
     </div>
   );
 };

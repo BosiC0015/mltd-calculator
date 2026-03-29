@@ -61,7 +61,7 @@ export default function Welcome() {
         {/* {mode === WHITEDAY && <WhiteDays />} */}
         {/* {mode === MLANNIVERSARY && <MLAnniversaries />} */}
         {/* {mode === CHRISTMAS && <Christmas />} */}
-        <div className="overlay"></div>
+        {/* <div className="overlay"></div> */}
 
         {/* current event */}
         <CurrentEvent />
