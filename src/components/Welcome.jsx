@@ -54,7 +54,7 @@ export default function Welcome() {
         <img className="welcome-chibi" alt="random chibi chara" src={miniCharaImgs[getRandom(54)]} />
       </h1>
 
-      <div id="bg">
+      <div id="bg"></div>
         {/* Holiday Banners */}
         {/* {mode === ANNIVERSARY && <Anniversaries />} */}
         {/* {mode === VALENTINE && <Valentine />} */}
@@ -65,7 +65,6 @@ export default function Welcome() {
 
         {/* current event */}
         <CurrentEvent />
-      </div>
     </main>
   );
 };
