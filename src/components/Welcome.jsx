@@ -48,13 +48,13 @@ export default function Welcome() {
   return (
     <main className="main-container">
       {/* Welcome Page */}
+      <div id="bg"></div>
       <h1 id="title">
         <img className="welcome-chibi" alt="random chibi chara" src={miniCharaImgs[getRandom(54)]} />
         <span className="title">MLTD Calculator</span>
         <img className="welcome-chibi" alt="random chibi chara" src={miniCharaImgs[getRandom(54)]} />
       </h1>
 
-      <div id="bg"></div>
         {/* Holiday Banners */}
         {/* {mode === ANNIVERSARY && <Anniversaries />} */}
         {/* {mode === VALENTINE && <Valentine />} */}
