@@ -11,7 +11,7 @@ export default function MilliColle() {
       <p className="event-title">Current Event: MILLIONLIVE COLLECTION</p>
       <div className="countdown">
         <p className="event-time">Time Remaining: </p>
-        <CountdownContainer endTime="2026-03-16T20:59:59.000+09:00" />
+        <CountdownContainer endTime="2026-04-16T20:59:59.000+09:00" />
       </div>
     </div>
   );
