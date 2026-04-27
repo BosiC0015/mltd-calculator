@@ -9,9 +9,9 @@ export default function TalkParty() {
   return (
     <div className="event">
       {/* <p>Current Event: Million Live TalkParty</p> */}
-      <p className="event-title"><b>THEATER TALK PARTY☆<br></br>～ユニットオフショット Vol.61～</b></p>
+      <p className="event-title"><b>THEATER TALK PARTY☆<br></br>～ユニットオフショット Vol.62～</b></p>
       <p>Time Remaining: </p>
-      <CountdownContainer endTime="2026-03-31T23:59:59.000+09:00" />
+      <CountdownContainer endTime="2026-04-30T23:59:59.000+09:00" />
       <img className="banner" alt="THEATER TALK PARTY Event" src={currentEventBanner} />
     </div>
   );
