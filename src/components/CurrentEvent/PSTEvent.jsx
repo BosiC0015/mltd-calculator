@@ -8,16 +8,16 @@ export default function PSTEvent() {
   return (
     <div className="event">
       <p className="event-title" lang="jp">
-        プラチナスタートラストBOT<br></br>
-        ～ Stick to my weapon ～
+        プラチナスターチューン<br></br>
+        ～囚われのTeaTime～
       </p>
       <p className="event-title en-alt">
-        Platinum Star Trust BOT (BATTLE OF THEATER)<br></br>
-        ～ Stick to my weapon ～
+        Platinum Star Tune<br></br>
+        ～ Torawre no Tea Time ～
       </p>
       <div className="countdown">
         <p className="event-time">Time Remaining: </p>
-        <CountdownContainer endTime="2026-04-25T20:59:59.000+09:00" />
+        <CountdownContainer endTime="2026-05-08T20:59:59.000+09:00" />
       </div>
       <img className="banner" alt="event" src={currentEventBanner} />
     </div>
