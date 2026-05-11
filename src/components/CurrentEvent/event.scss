@@ -4,16 +4,16 @@
   &-title {
     font-size: 1rem;
     border: 1px solid var(--shade-200);
-
+    
     &.en-alt {
       display: none;
-
+      
       &:hover {
         display: block;
       }
     }
   }
-
+  
   .countdown {
     font-size: 1rem;
   }
@@ -31,21 +31,29 @@ img.banner {
 }
 
 // .cards {
-//   width: 100%;
-//   padding: 20px 0;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-// }
-
-@media only screen and (min-width: 768px) {
-  .event {
-    .event-title {
-      font-size: 1.75rem;
+  //   width: 100%;
+  //   padding: 20px 0;
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  // }
+  
+  @media only screen and (min-width: 768px) {
+    .current-event {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+    
+    .event {
+      width: 90%;
 
-    .countdown {
-      font-size: 1.25rem;
+      .event-title {
+        font-size: 1.75rem;
+      }
+      
+      .countdown {
+        font-size: 1.25rem;
     }
   }
   .cards {
