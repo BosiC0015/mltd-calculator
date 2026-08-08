@@ -20,6 +20,29 @@
   // width: calc(100dvw - 20px);
 }
 
+.title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+  color: var(--shade-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 4% 0 6%;
+  padding-bottom: 0.7rem;
+  border-bottom: 3px solid var(--primary-color);
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+  }
+}
+
 #title {
   position: absolute;
   top: 25%;
@@ -31,10 +54,14 @@
   justify-content: center;
   
   .title {
-    margin: 1% 0;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
+    font-size: 1.4rem;
+    border-bottom: none;
+    margin: 0;
+    padding-bottom: 0;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -53,7 +80,7 @@ form {
 .form-input {
   display: flex;
   flex-direction: column;
-  padding: 8px 0;
+  padding: 10px 0;
 
   &-special {
     display: flex;
@@ -64,13 +91,26 @@ form {
   }
 
   &__input {
-    height: 2rem;
+    height: 2.2rem;
+    border: 1px solid var(--shade-600);
+    background: var(--highlight-600);
+    font-size: 1.1rem;
+    font-family: var(--font-body);
+    color: var(--shade-600);
+    text-align: center;
+    border-radius: 2px;
+    transition: border-color 0.2s ease;
+
+    &:focus {
+      outline: none;
+      border-color: var(--shade-400);
+    }
   }
 
   &__selection {
-    height: 2rem;
-    font-size: 1.2rem;
-    font-weight: 300;
+    height: 2.2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
   }
 }
 
@@ -81,8 +121,9 @@ form {
 
 label {
   padding: 2%;
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .event-item-qty {
@@ -96,49 +137,89 @@ label {
   }
 }
 
+.event-item-qty-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .choose-item-qty {
-  font-size: 1.25rem;
-  background-color: #fffcee;
-  border: 1px solid #818159;
-  border-radius: .3rem;
+  font-size: 1.1rem;
+  font-family: var(--font-body);
+  background-color: var(--highlight-600);
+  color: var(--shade-600);
+  border: 1px solid var(--shade-600);
+  border-radius: 2px;
   padding: .5rem 1rem;
+  transition: border-color 0.2s ease;
 }
 .choose-item-qty:focus {
-  background-color: #f3dea4;
+  outline: none;
+  border-color: var(--primary-color);
 }
 
 .buttons {
-  padding: 5%;
+  padding: 5% 5% 2%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  gap: 4%;
 
   &-clear {
+    font-size: 0.95rem;
     width: 30%;
-    font-size: 1.5rem;
-    background-color: #ffe186;
-    border: 1px solid #9b7506;
-    border-radius: .3rem;
-    padding: .4rem .825rem;
+    font-family: var(--font-body);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    background-color: var(--highlight-200);
+    color: var(--shade-500);
+    border: 1px solid var(--shade-600);
+    border-radius: 3px;
+    padding: .6rem .8rem;
+    transition: background-color 0.2s ease;
+
+    &:active {
+      background-color: var(--shade-400);
+    }
   }
 
   &-calc {
     width: 50%;
-    font-size: 1.5rem;
-    background-color: #ffe186;
-    border: 1px solid #9b7506;
-    border-radius: .3rem;
-    padding: .4rem .825rem;
+    font-size: 1.05rem;
+    font-family: var(--font-body);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    background-color: var(--highlight-200);
+    color: var(--shade-600);
+    border: 1px solid var(--shade-600);
+    border-radius: 3px;
+    padding: .65rem .825rem;
+    transition: filter 0.2s ease;
+
+    &:active {
+      filter: brightness(0.92);
+    }
   }
 }
 
 .result {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   text-align: start;
+  width: 100%;
+  margin-top: 4%;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--shade-600);
+  border-left: 4px solid var(--primary-color);
 }
 
 .result > h5 {
-  color: #9b7506;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--shade-600);
+  border-bottom: 1px solid var(--shade-600);
+  padding-bottom: 0.6rem;
+  margin: 0 0 0.6rem;
 }
 
 p {
@@ -156,6 +237,7 @@ p {
 
 .countdown-value {
   padding: 0 15px;
+  font-variant-numeric: tabular-nums;
 }
 
 .default {
@@ -192,10 +274,7 @@ p {
   justify-content: center;
   
   .title {
-    margin: 1% 0;
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-align: center;
+    font-size: 2.25rem;
   }
 }
 
